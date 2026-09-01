@@ -300,14 +300,14 @@ Both the public README and the previous public Release ended at `1.2.17`; this u
 
 v1.5.18 Release 提供以下 8 个用户文件 / The v1.5.18 Release provides these eight user files:
 
-- `QQ ChainScope 1.5.18 Windows x64 VST3.zip`
-- `QQ ChainScope 1.5.18 macOS Apple Silicon VST3.zip`
-- `QQ ChainScope 1.5.18 macOS Intel x86_64 VST3.zip`
-- `QQ ChainScope 1.5.18 macOS Universal 2 AU.zip`
-- `QQ ChainScope 1.5.18 安装说明（中文）.txt`
-- `QQ ChainScope 1.5.18 Installation Guide (English).txt`
-- `QQ ChainScope 1.5.18 用户手册 中文版.pdf`
-- `QQ ChainScope 1.5.18 User Manual English.pdf`
+- `QQ-ChainScope-1.5.18-Windows-x64-VST3.zip`
+- `QQ-ChainScope-1.5.18-macOS-Apple-Silicon-VST3.zip`
+- `QQ-ChainScope-1.5.18-macOS-Intel-x86_64-VST3.zip`
+- `QQ-ChainScope-1.5.18-macOS-Universal-2-AU.zip`
+- `QQ-ChainScope-1.5.18-Installation-Guide-Chinese.txt`
+- `QQ-ChainScope-1.5.18-Installation-Guide-English.txt`
+- `QQ-ChainScope-User-Manual-Chinese-v1.5.18.pdf`
+- `QQ-ChainScope-User-Manual-English-v1.5.18.pdf`
 
 **[前往 v1.5.18 Release 下载 / Open the v1.5.18 Release](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.18)**
 
