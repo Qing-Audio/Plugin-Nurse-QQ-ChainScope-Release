@@ -2,25 +2,28 @@
 
 **Qing Audio 官方下载与发布页 / Official downloads and releases by Qing Audio**
 
-> **不是单纯的 A/B 按钮，也不是单纯的频谱仪。**  
+> **不是单纯的 A/B 按钮，也不是单纯的频谱仪。**
 > QQ ChainScope 是一套直接工作在真实 DAW 工程里的“处理链护士”：它帮助你检查处理前后变化、做公平响度比较、给整条链增加 Dry/Wet、校准相位与左右电平、修正残余延迟、记录硬件设置，并把最多四套处理方案放到同一个 Mixboard 里横向比较。
 >
-> **More than an A/B button or spectrum analyzer.**  
+> **More than an A/B button or spectrum analyzer.**
 > QQ ChainScope is a practical “plug-in nurse” that lives inside a real DAW session: compare before/after behavior, loudness-match fairly, add Dry/Wet to a whole chain, align phase, calibrate L/R balance, rescue residual timing errors, document hardware settings, and compare up to four independent processing choices in one Mixboard.
 
-> **QQ ChainScope 是专有软件，不开源。** 本公开仓库只提供编译后的插件成品、文档、截图和版本说明；源码仓库保持私有。  
+> **QQ ChainScope 是专有软件，不开源。** 本公开仓库只提供编译后的插件成品、文档、截图和版本说明；源码仓库保持私有。
 > **QQ ChainScope is proprietary software and is not open source.** This public repository contains compiled plug-ins, documentation, screenshots, and release information only; the source repository remains private.
 
 <p align="center">
   <img src="assets/screenshots/02-mixboard-expanded-v1.2.17.png" alt="QQ ChainScope Mixboard with Spectrum and Waveform" width="100%">
 </p>
 
+> 上图保留为 1.2.17 历史界面示例；当前公开版本和实际操作请以 1.5.18 手册为准。
+> The image above is retained as a v1.2.17 historical UI example; use the v1.5.18 manuals for the current public version and workflow.
+
 ## 最新版本 / Latest Release
 
-**QQ ChainScope 1.2.17** 是当前最新、最稳定版本。  
-**QQ ChainScope 1.2.17** is the current latest and most stable release.
+**QQ ChainScope 1.5.18** 是当前最新公开稳定版本，发布日期为 **2026-09-01**。
+**QQ ChainScope 1.5.18** is the current latest public stable release, published on **2026-09-01**.
 
-- **[下载 v1.2.17 / Download v1.2.17](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.2.17)**
+- **[下载 v1.5.18 / Download v1.5.18](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.18)**
 - **[全部版本 / All releases](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases)**
 - **[Issues / Bugs & Feedback](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/issues)**
 
@@ -35,7 +38,7 @@ QQ ChainScope 的重点不是实验室式单插件测试，而是让你在真实
 3. **这个插件没有 Mix，或者我想把整条链并行混合怎么办？** —— ChainScope 给单个插件、插件串或外部硬件链增加时间对齐的 Dry/Wet。
 4. **并行以后为什么发空、变薄、低频没了？** —— PHASE 用于 Original 与纯 Wet 之间的相位/时间关系校准。
 5. **模拟硬件左右通道不完全一样怎么办？** —— L/R Cal 校准处理链额外引入的左右平均 RMS 失配；1.2.16 起可用 M 校准源建立更干净的双单声道测试条件。
-6. **插件上报 latency 不准，PDC 后仍有残余错位怎么办？** —— Latency Rescue 对剩余误差做最后补救。
+6. **PDC 后仍有稳定的固定错位怎么办？** —— Latency Rescue 在停止播放后直接测量 post-PDC residual，并对剩余固定误差做最后补救。
 7. **硬件旋钮、接线、照片和说明总是散落在工程外？** —— Chain Note 把文字和图片直接跟工程一起保存。
 8. **我有 LA-2A、33609、FET、SSL 等多个方案，怎么快速横向比较？** —— 一个 Group 最多 4 个 Return，Mixboard 从同一个 Original 出发快速试听和看图。
 
@@ -43,18 +46,18 @@ Many plug-ins can tell you what **they** are doing. In a real mix, the more usef
 
 ## 三个组件，一套工作流 / Three Components, One Workflow
 
-从 1.2.17 开始，DAW 列表与 VST3 bundle 使用更短、更容易区分的名称：
+当前 1.5.18 的 DAW 列表和实际 VST3 bundle 使用以下名称；三个组件必须始终保持同一版本：
 
 | 插件 / Plug-in | 角色 / Role |
 |---|---|
-| **QQ A Send ChainScope** | 放在处理链之前，捕获 Original，并创建或选择 Group。 / Place before the chain to capture Original and create/select a Group. |
-| **QQ B Return ChainScope** | 放在处理链之后，负责测量、Dry/Wet、QQ Bypass、PHASE、L/R Cal、Latency Rescue、图表和 Chain Note。 / Place after the chain for measurement, Dry/Wet, QQ Bypass, PHASE, L/R Cal, Latency Rescue, graphs, and Chain Note. |
-| **QQ C Mixboard ChainScope** | 比较 Original 与最多四个 Return 结果；使用时必须放在 FINAL Return 之后。 / Compare Original with up to four Return results; when used, it must be placed after the FINAL Return. |
+| **QQ-A-Send-ChainScope.vst3** | 放在处理链之前，捕获 Original，并创建或选择 Group。 / Place before the chain to capture Original and create/select a Group. |
+| **QQ-B-Return-ChainScope.vst3** | 放在处理链之后，负责测量、Dry/Wet、QQ Bypass、PHASE、L/R Cal、Latency Rescue、图表和 Chain Note。 / Place after the chain for measurement, Dry/Wet, QQ Bypass, PHASE, L/R Cal, Latency Rescue, graphs, and Chain Note. |
+| **QQ-C-Mixboard-ChainScope.vst3** | 比较 Original 与最多四个 Return 结果；使用时必须放在 FINAL Return 之后。 / Compare Original with up to four Return results; when used, it must be placed after the FINAL Return. |
 
 最简单的 Single Return：
 
 ```text
-QQ A Send ChainScope -> plug-in / hardware chain -> QQ B Return ChainScope (FINAL)
+QQ-A-Send-ChainScope -> plug-in / hardware chain -> QQ-B-Return-ChainScope (FINAL)
 ```
 
 Multi Return：
@@ -123,29 +126,30 @@ PHASE CALC 基于 **Original / Dry 与纯 Wet** 的关系进行测量，发生�
 
 PHASE CALC is based on the relationship between the aligned Original/Dry and the **pure raw Wet** before Dry/Wet mixing. The Dry/Wet knob therefore does not change the calibration measurement.
 
-## Latency Rescue：PDC 后还剩多少“旧账”？ / Residual Timing Rescue After PDC
+## Latency Rescue：PDC 后仍有固定残差时 / Latency Rescue After PDC
 
-**PDC = Plugin Delay Compensation.** 插件会把处理延迟告诉 DAW，DAW 再做自动补偿。Latency Rescue 不替代 PDC；它处理的是 **PDC / 外部 FX 延迟补偿已经工作之后，仍然残留的时间误差**。
+**PDC = Plugin Delay Compensation。** 插件或硬件回路让声音晚到时，DAW 会根据插件上报的延迟自动对齐其它路径。大多数工程只需要 PDC；Latency Rescue 只处理 PDC 工作后仍然存在的**稳定固定残差**。
 
-最简单的操作方法：
+如果 Before/Dry 与 Wet 在 PDC 后仍无法重合，并行 Dry/Wet 出现梳状感、瞬态发虚或相位感，可以这样使用：
 
 ```text
-完全 Deactivate 待测插件 + 它后面的插件
--> 播放同一段素材 -> Stop -> SET REFERENCE
--> 重新打开这些插件
--> 再播放同一段 -> Stop -> MEASURE & APPLY
--> COMP ON
+播放有代表性的素材
+-> Stop
+-> 打开 Return Settings
+-> MEASURE & APPLY
+-> 用 COMP ON/OFF 试听
 ```
 
-三个数值的意义：
+- **Reference**：从 1.5.18 起固定为 `0 smp / 0.000 ms`，不再需要 `SET REFERENCE`。
+- **Current**：本次测得的 post-PDC 固定偏移。
+- **Residual**：需要补偿的固定偏移；1.5.18 中与 Current 相同。
+- **COMP ON/OFF**：只切换补偿试听，不会删除测量。
 
-- **Reference**：建立基准时，Send→Return 保留下来的残余延迟。**通常应该是 0。** 如果不是 0，说明当前待校准插件之前的链路已经有未完全补偿的“旧残余误差”。它不是正常插件总 latency。
-- **Current**：打开当前待校准插件以后，整段 Send→Return 现在的残余误差。
-- **Residual = Current - Reference**：当前待校准对象新增加的残余误差，也是 Latency Rescue 真正需要修正的数值。
+不要对混响、Delay、调制或其它本来就随时间变化的效果使用 Latency Rescue；它们的延迟不是可由固定样本数补偿的整体偏移。
 
-<p align="center">
-  <img src="assets/screenshots/05-latency-rescue-v1.2.17.png" alt="QQ ChainScope Latency Rescue compensated state" width="420">
-</p>
+**PDC = Plugin Delay Compensation.** The DAW aligns paths using reported plug-in delay. Most sessions need only PDC; Latency Rescue is for a stable fixed residual that remains after PDC.
+
+Play representative material, stop, open Return Settings, click **MEASURE & APPLY**, then audition **COMP ON/OFF**. In v1.5.18 Reference is fixed at zero; Current and Residual show the measured post-PDC bulk offset. Do not use Latency Rescue for reverb, delay, modulation, or other intentionally time-varying effects.
 
 ## Mixboard：同一个 Original，最多四套独立方案 / One Original, Up to Four Choices
 
@@ -180,12 +184,32 @@ Chain Note 支持文字、中文/Unicode、图片、硬件照片、接线说明�
 
 FULL / ECO **只决定显示分析什么时候工作，不改变声音 DSP**。
 
-- **Return FULL**：只要 DAW 实时工作，显示分析持续运行；界面关闭只是停止绘制，不等于改变声音。
-- **Return ECO**：Return 编辑器打开时，Meter / LUFS / Difference / Spectrum / Waveform / WaveScope 作为一个完整分析 Session 工作；编辑器关闭后停止显示分析。
-- **Mixboard FULL**：实时持续维护 Mixboard 分析。
-- **Mixboard ECO**：只有 Mixboard 编辑器可见并且 Graph 展开时才做图表分析。
-- **Offline Render**：无论 FULL 还是 ECO，显示分析都自动关闭；声音 DSP 正常工作。
-- **Transport Stop Hold**：Stop 后 Spectrum / Waveform / WaveScope 保持最后一帧，不再被宿主停止状态下的静音 callback 冲掉；播放段 RMS/LUFS 也停止累计。
+- **Return FULL**：DAW 实时工作时持续维护显示分析。
+- **Return ECO**：编辑器需要时才运行昂贵的显示分析。
+- **Mixboard FULL**：COMPARE 与 MIX 在同一轮播放中各自维护独立 Spectrum、Waveform/WaveScope 与 Stop/HOLD 显示库；切换模式不会清空或重播。
+- **Mixboard ECO**：只维护当前模式，以降低显示分析开销。
+- **Offline Render**：显示分析自动关闭，声音 DSP 正常工作。
+- **Transport Stop Hold**：Stop 后保持最后结果，不被宿主停止状态下的静音 callback 冲掉。
+
+FULL/ECO controls display analysis only and does not alter audio DSP. In Mixboard FULL, COMPARE and MIX maintain independent Spectrum and Waveform/WaveScope display/HOLD banks during the same pass; switching modes does not clear or replay them. ECO maintains only the selected mode. Offline render disables display analysis while audio DSP remains active, and Stop holds the last completed results.
+
+## 1.5.18 更新 / What Changed in 1.5.18
+
+1.5.18 简化并修正 Latency Rescue：Reference 永久固定为 0，移除 `SET REFERENCE`；停止播放后点击 `MEASURE & APPLY` 即可建立本次测量域，`Current = Residual =` 测得的 post-PDC 固定偏移。已经完成测量的旧工程会保留有符号 Residual 并无声迁移；只有旧 Reference、没有完成测量的状态会变为 `NO MEASUREMENT`。
+
+Version 1.5.18 simplifies and corrects Latency Rescue: Reference is permanently fixed at zero, `SET REFERENCE` is removed, and `MEASURE & APPLY` after Stop establishes the measurement domain with `Current = Residual =` the measured post-PDC fixed offset. Completed legacy measurements preserve signed Residual and migrate silently; Reference-only legacy state becomes `NO MEASUREMENT`.
+
+兼容性与验证 / Compatibility and validation:
+
+- Windows 10/11 x64 VST3；macOS 11+ Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。
+- Windows 三个 VST3 已完成 Release 构建、版本/哈希核对和 Steinberg validator；macOS 三类生成物已核对架构、版本、CRC，AU 完成签名检查与 `auval`。
+- 三个组件必须一起升级，不能混用版本。
+- macOS 生成物为 ad-hoc 签名，未经过 Apple Developer ID 公证。
+
+- Windows 10/11 x64 VST3; macOS 11+ Apple Silicon VST3, Intel x86_64 VST3, and Universal 2 AU.
+- All three Windows VST3 bundles passed Release build, version/hash checks, and Steinberg validation. The macOS packages passed architecture, version, and CRC checks; AU also passed signature verification and `auval`.
+- Upgrade all three components together; do not mix versions.
+- macOS builds are ad-hoc signed and are not notarized with an Apple Developer ID.
 
 ## 1.2.17 更新 / What Changed in 1.2.17
 
@@ -223,21 +247,71 @@ QQ ChainScope Mixboard.vst3
 - **1.2.7 — Shared Aligned Spectrum**：Return 与 Mixboard 共用统一对齐后的分析源。
 - **1.2.6 — Unified Aligned Sources**：Original + R1-R4 统一到同一时间轴后再决定播放与分析哪一路。
 
+## 1.2.18 → 1.5.18 完整逐版本记录 / Complete Version-by-Version Record
+
+公开 README 和上一公开 Release 的起点均为 `1.2.17`；本次终点为 `1.5.18`。以下直接记录区间内全部 39 个真实开发版本，包括后来被替代的 Candidate。
+Both the public README and the previous public Release ended at `1.2.17`; this update ends at `1.5.18`. The 39 real versions in that interval are listed directly below, including candidates later superseded.
+
+| 版本 / Version | 日期与状态 / Date and status | 中文变化 / English changes |
+|---|---|---|
+| **1.2.18** | 2026-08 · Candidate，后来提升为 Stable / later promoted Stable | 中文：为每个 Return/Mixboard 编辑器加入窗口恢复保护，防止 Cubase 的陈旧 wrapper 矩形污染缩放；DSP、路由和 state 不变。<br>English: Added per-editor window-restore guards so stale Cubase wrapper rectangles cannot corrupt scale; DSP, routing, and state stayed unchanged. |
+| **1.3.0** | 2026-08 · Candidate | 中文：新增全局 Spectrum Slope、Linear-Phase EQ Match、Amount/Smooth 的前置开发线，以及 10/20/40/80 ms 质量选项。<br>English: Introduced global Spectrum Slope, the Linear-Phase EQ Match development line, and 10/20/40/80 ms quality choices. |
+| **1.3.1** | 2026-08-18 · Stable | 中文：让 PHASE CAL 与 EQ Match CAL 各自保留资料，Dry/Wet 不再清除 Match；QQ Bypass 移到 Monitor 之前。<br>English: Made PHASE and EQ Match calibration data independent, stopped Dry/Wet from clearing Match, and moved QQ Bypass before Monitor. |
+| **1.3.2** | 2026-08 · 开发版本 / Development | 中文：新增 Standalone None，调整 Delta 布局，并把三个实际 bundle 改为连字符命名；升级必须删除旧三件套。<br>English: Added Standalone None, refined Delta layout, and adopted hyphenated physical bundle names; old three-bundle sets must be removed on upgrade. |
+| **1.3.3** | 2026-08 · 开发版本 / Development | 中文：提高 Match 精度，修复 Bypass 启动 Wet 突发，并让脱离 Send 的 Standalone Return 保留已提交校准模型。<br>English: Improved Match precision, fixed a bypass-startup Wet burst, and retained committed calibration models when a Return detaches into Standalone. |
+| **1.3.4** | 2026-08 · 开发版本 / Development | 中文：低频 Match 改用 16384 点高精度分析，恢复并明确 PHASE/Polarity 行为与保存状态。<br>English: Moved LF Match to 16384-point high-precision analysis and restored/clarified PHASE and Polarity behavior and persistence. |
+| **1.3.5** | 2026-08 · 开发版本 / Development | 中文：Return AVG 与 Mixboard 共用高精度分析结果，PHASE 极性元数据升级为 QCP9。<br>English: Unified high-precision Return AVG and Mixboard data and advanced PHASE polarity metadata to QCP9. |
+| **1.3.6** | 2026-08 · 开发版本 / Development | 中文：新增连续 EQ Match Amount 与可见匹配曲线。<br>English: Added continuous EQ Match Amount and a visible match curve. |
+| **1.3.7** | 2026-08 · 开发版本 / Development | 中文：EQ Match 改用 16384 点 FFT 频带功率，并移除固定 -100 dB 分析地板。<br>English: Changed EQ Match to 16384-point FFT band power and removed the fixed -100 dB analysis floor. |
+| **1.3.8** | 2026-08 · 开发版本 / Development | 中文：加入完整传递曲线、Smooth、QEM2，并固定 AVG/PEAK 槽位语义。<br>English: Added full-transfer correction, Smooth, QEM2 data, and fixed AVG/PEAK slot semantics. |
+| **1.3.9** | 2026-08 · 开发版本 / Development | 中文：调整 UI 默认值；加入双卷积器 IR 预热与交叉淡化，修复快速拖动卡顿。<br>English: Refined UI defaults, added dual-convolver IR warm-up/crossfade, and fixed rapid-drag stutter. |
+| **1.3.10** | 2026-08 · 开发版本 / Development | 中文：相关控制行下移 8 px，完成界面对齐；DSP 与兼容性不变。<br>English: Moved the relevant control row by 8 px for final alignment; DSP and compatibility were unchanged. |
+| **1.4.0** | 2026-08 · Stable | 中文：Mixboard 新增 ST/MONO/L/R/SIDES/SIP、Monitor Filter、斜率和频段试听，并以平滑交叉淡化切换。<br>English: Added the full Mixboard Monitor system with ST/MONO/L/R/SIDES/SIP, Monitor Filter, slopes, band audition, and smooth transitions. |
+| **1.4.1** | 2026-08 · 开发版本 / Development | 中文：改进来源/眼睛状态、SIP 默认和紧凑滤波界面，并为 L/R 单声道试听加入监听补偿。<br>English: Refined source/eye state, SIP defaults, compact filter UI, and monitor-only compensation for L/R mono audition. |
+| **1.4.2** | 2026-08 · 开发版本 / Development | 中文：统一 LOW CUT/Band Pass/HIGH CUT 的试听语义，调整 Slope 行并修正 SIDES 补偿。<br>English: Corrected LOW CUT/Band Pass/HIGH CUT audition semantics, refined the Slope row, and fixed SIDES compensation. |
+| **1.4.3** | 2026-08 · Stable | 中文：SUB/BASS/LOW MID/MID/HIGH 总会载入边界并回到 Band Pass，消除旧 Cut/Bypass 模式残留。<br>English: Named band buttons always load their boundaries and return to Band Pass, eliminating stale Cut/Bypass modes. |
+| **1.4.4** | 2026-08 · 开发版本 / Development | 中文：Return 分离 WET OUT 与 MAIN OUT 测量域；PHASE 保持 Wet-only，EQ Match 保持 Main-only。<br>English: Split Return into WET OUT and MAIN OUT measurement domains; PHASE remains Wet-only and EQ Match Main-only. |
+| **1.4.5** | 2026-08 · 开发版本 / Development | 中文：WET/MAIN 获得一致的单输出与 L/R 控制，新增 ADD（Add Wet）和 50 ms 平滑切换。<br>English: Added aligned WET/MAIN single-output and L/R controls plus ADD (Add Wet) with a 50 ms smooth switch. |
+| **1.4.6** | 2026-08 · 开发版本 / Development | 中文：修复 WET/MAIN L/R→单输出往返；ADD 在 Standalone/None 中禁用并在重连 Group 后恢复。<br>English: Fixed WET/MAIN L/R-to-single-output roundtrips; ADD disables in Standalone/None and restores after Group reconnect. |
+| **1.4.7** | 2026-08 · Stable | 中文：L/R 差异可跨多次模式切换保存，单输出调节会整体平移保存的 L/R 对。<br>English: Preserved L/R difference across repeated mode switches, with single-output edits translating the retained pair. |
+| **1.5.0** | 2026-08 · 开发版本 / Development | 中文：Mixboard 新增 COMPARE/MIX，可按比例混合对齐后的 Original 与 R1-R4 final MAIN，并加入 Mix Main、MIX EQ Match 和分析视图。<br>English: Added COMPARE/MIX, proportional summing of aligned Original and R1-R4 final MAIN, Mix Main, MIX EQ Match, and analysis views. |
+| **1.5.1** | 2026-08 · 开发版本 / Development | 中文：修复 Runtime 租约造成的 MIX 静音和空 Meter/Spectrum/Waveform，并整理来源控制。<br>English: Fixed Runtime-lease MIX silence and empty analysis displays, and compacted source controls. |
+| **1.5.2** | 2026-08 · 开发版本 / Development | 中文：COMPARE/MIX 改为连续 raised-cosine 交叉淡化；MIX 明确不使用 Monitor Filter。<br>English: Replaced suspend/resume with a continuous raised-cosine COMPARE/MIX crossfade; MIX explicitly omits Monitor Filter. |
+| **1.5.3** | 2026-08 · Stable | 中文：修复 MIX 百分比精确输入和定时器覆盖；Alt 均分按当前 Included 来源计算，并优化紧凑 Pan。<br>English: Fixed MIX numeric entry and timer overwrite, made Alt equal share follow Included sources, and refined compact Pan. |
+| **1.5.4** | 2026-08 · 开发版本 / Development | 中文：MONO/L/R/SIDES 与滤波模式支持重复点击取消；移除独立 RESET，Slope 改为紧凑数字选择器。<br>English: Made monitor/filter modes self-cancelling, removed separate RESET, and changed Slope to a compact numeric selector. |
+| **1.5.5** | 2026-08 · 开发版本 / Development | 中文：Return/Mixboard Monitor 与 SIP 使用 20 ms 平滑矩阵，EQ Match Quality 增至 10/20/40/80 ms。<br>English: Added 20 ms smoothed Return/Mixboard Monitor and SIP matrices and 10/20/40/80 ms EQ Match Quality. |
+| **1.5.6** | 2026-08 · 开发版本 / Development | 中文：修复多 Return Final audition 的来源 Monitor metadata 硬切换，每个来源独立平滑。<br>English: Fixed hard source-Monitor metadata switching in multi-Return Final audition with per-source smoothing. |
+| **1.5.7** | 2026-08 · 开发版本 / Development | 中文：有 MIX EQ Match 模型时持续预热隐藏 MIX、卷积和对齐历史，消除返回 MIX 的冷启动爆音。<br>English: Kept hidden MIX, convolution, and alignment history warm when a MIX EQ Match model exists, eliminating cold-start pops. |
+| **1.5.8** | 2026-08 · 开发版本 / Development | 中文：恢复完整 EQ Match 传递校正，移除仅保留形状的宽带均值归一化；不加入实时 LUFS 自动增益。<br>English: Restored full EQ Match transfer correction, removed shape-only broadband normalization, and added no realtime LUFS autogain. |
+| **1.5.9** | 2026-08 · 开发版本 / Development | 中文：区分真实 DAW Play/Stop 与单回调分析推进，静态位置或短暂缺失 PositionInfo 不再误隐藏 MIX 曲线。<br>English: Split real DAW Play/Stop from per-callback analysis advancement so static positions or transient missing PositionInfo no longer hide MIX curves. |
+| **1.5.10** | 2026-08-22 · Stable | 中文：MIX Spectrum 只分析有效 processFrames，并直接分析已对齐的立体声 Before/After，避免陈旧尾部和双重 Monitor 转换。<br>English: Limited MIX Spectrum to valid processFrames and analyzed aligned stereo Before/After directly, avoiding stale tails and double Monitor conversion. |
+| **1.5.11** | 2026-08-23 · Stable | 中文：ST 频谱改为 L/R 各自计算功率后逐频带平均，纯 Side 不再因 `(L+R)/2` 抵消。<br>English: Corrected ST Spectrum to average independent L/R band power so pure Side no longer disappears through `(L+R)/2` cancellation. |
+| **1.5.12** | 2026-08-23 · Candidate，已被 1.5.13 取代 / superseded | 中文：Return/Mixboard 保存对齐的立体声 L/R 分析历史，Stop 后可切换通道与频段视图而无需重播。<br>English: Retained aligned stereo L/R analysis history so channel and band views can be switched after Stop without replay. |
+| **1.5.13** | 2026-08-23 · Stable | 中文：保留 1.5.12 功能并降低分析开销：一次 L/R 捕获派生全部视图，AVG/EQ FFT 减少，Waveform 按 UI 需求生成，ECO 跳过隐藏开销。<br>English: Preserved v1.5.12 while reducing analysis cost through one L/R capture for all views, fewer AVG/EQ FFTs, on-demand Waveform snapshots, and ECO hidden-work skips. |
+| **1.5.14** | 2026-08-24 · Stable | 中文：修复真实宿主时间线被旧回退数据替换；三个 Windows target 在 CMake 正式加入 NOMINMAX，避免 MSVC min/max 宏干扰。<br>English: Fixed stale fallback data replacing a real host timeline and formally added NOMINMAX to the three Windows CMake targets. |
+| **1.5.15** | 2026-08-25 · Stable | 中文：FULL 下 COMPARE/MIX 同时维护独立分析与显示/HOLD bank；修复 Stop 后 VIS/Delta 更新，并统一 MIX Slope 布局。<br>English: Added independent simultaneous COMPARE/MIX analysis and display/HOLD banks in FULL, fixed stopped VIS/Delta updates, and aligned MIX Slope layout. |
+| **1.5.16** | 2026-08-25 · Stable | 中文：统一 MIX 与 COMPARE Spectrum 的固定绘图区几何，不改变 Spectrum 或音频算法。<br>English: Unified fixed MIX and COMPARE Spectrum plot geometry without changing Spectrum or audio algorithms. |
+| **1.5.17** | 2026-08-26 · Stable | 中文：加入工程恢复保护，防止重开工程时宿主临时格式清除已完成的 Latency Rescue；真实后续格式/Group 变化仍安全失效。<br>English: Added project-restore protection so provisional host formats cannot clear completed Latency Rescue; genuine later format/Group changes still invalidate safely. |
+| **1.5.18** | 2026-08-31 · 当前 Stable / Current Stable | 中文：Latency Rescue 的 Reference 固定为 0，移除 SET REFERENCE；停止播放后 MEASURE & APPLY 直接测量 post-PDC offset，并保存 Current=Residual。旧工程保留有符号 Residual 并无声迁移。<br>English: Fixed Latency Rescue Reference at 0, removed SET REFERENCE, and made MEASURE & APPLY directly store the measured post-PDC offset as Current=Residual after Stop. Legacy signed Residual migrates silently. |
+
+覆盖核对 / Coverage check: `1.2.18`, `1.3.0–1.3.10`, `1.4.0–1.4.7`, `1.5.0–1.5.18`; 遗漏版本：**无** / omitted versions: **none**.
+
 ## 下载 / Downloads
 
-v1.2.17 Release 提供：
+v1.5.18 Release 提供以下 8 个用户文件 / The v1.5.18 Release provides these eight user files:
 
-- **QQ-ChainScope-1.2.17-Windows-x64-VST3.zip**
-- **QQ-ChainScope-1.2.17-macOS-Apple-Silicon-VST3.zip**
-- **QQ-ChainScope-1.2.17-macOS-Intel-VST3.zip**
-- **QQ-ChainScope-1.2.17-macOS-Universal-2-AU.zip**
-- **QQ-ChainScope-1.2.17-Installation-Guide-Chinese.txt**
-- **QQ-ChainScope-1.2.17-Installation-Guide-English.txt**
-- **QQ-ChainScope-User-Manual-Chinese-v1.2.17.pdf**
-- **QQ-ChainScope-User-Manual-English-v1.2.17.pdf**
-- **QQ-ChainScope-1.2.17-SHA256SUMS.txt**
+- `QQ ChainScope 1.5.18 Windows x64 VST3.zip`
+- `QQ ChainScope 1.5.18 macOS Apple Silicon VST3.zip`
+- `QQ ChainScope 1.5.18 macOS Intel x86_64 VST3.zip`
+- `QQ ChainScope 1.5.18 macOS Universal 2 AU.zip`
+- `QQ ChainScope 1.5.18 安装说明（中文）.txt`
+- `QQ ChainScope 1.5.18 Installation Guide (English).txt`
+- `QQ ChainScope 1.5.18 用户手册 中文版.pdf`
+- `QQ ChainScope 1.5.18 User Manual English.pdf`
 
-A Send、B Return 和 C Mixboard 必须保持同一版本并一起更新。  
+**[前往 v1.5.18 Release 下载 / Open the v1.5.18 Release](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.18)**
+
+A Send、B Return 和 C Mixboard 必须保持同一版本并一起更新。
 A Send, B Return, and C Mixboard must remain on the same version and be updated together.
 
 ## 安装 / Install
@@ -245,9 +319,9 @@ A Send, B Return, and C Mixboard must remain on the same version and be updated 
 ### Windows x64 VST3
 
 1. 完全退出 DAW。
-2. 如果从 1.2.16 或更早版本升级，先删除旧 bundle 名。
+2. 删除系统 VST3 目录中旧版或旧命名的三个 ChainScope bundle；不要保留重复版本。
 3. 解压 Windows 包。
-4. 将三个新版 `.vst3` bundle 放到：
+4. 将三个 1.5.18 `.vst3` bundle 放到：
 
 ```text
 C:\Program Files\Common Files\VST3
@@ -289,15 +363,26 @@ The macOS builds are ad-hoc signed and build-validated, but **not notarized with
 | macOS AU | Universal 2 / arm64 + x86_64 |
 | macOS 最低目标系统 / Deployment target | macOS 11 or later |
 
+## 已知限制与兼容性 / Known Limitations and Compatibility
+
+- macOS 文件经过 ad-hoc 签名，但没有 Apple Developer ID 公证；只应从本仓库正式 Release 下载，并按随包说明处理 quarantine。
+- Apple Silicon 与 Intel VST3 二选一；不要同时安装两个架构包。Universal 2 AU 可以单独安装。
+- 三个 ChainScope 组件必须同版本、一起替换；升级前关闭 DAW 并删除旧 bundle，必要时重新扫描。
+- 不同 DAW/系统版本的扫描、窗口恢复和实时回调行为可能不同；如遇问题请通过本仓库 Issues 提供可复现信息。
+
+- macOS files are ad-hoc signed but not Apple Developer ID notarized. Download only from this repository's official Release and follow the included quarantine instructions.
+- Install either the Apple Silicon or Intel VST3 package, not both. The Universal 2 AU can be installed separately.
+- Keep all three ChainScope components on the same version. Quit the DAW, remove old bundles, replace the full set, and rescan if required.
+- Plug-in scanning, window restoration, and realtime callback behavior can vary by DAW and OS version; report reproducible issues through this repository.
+
 ## 用户手册 / User Manuals
 
-v1.2.17 的新版截图增强手册包含真实 DAW / 插件截图，覆盖：Quick Start、Send、Return、L/R + M、PHASE、Latency Rescue、Spectrum、Waveform / WaveScope、Chain Note、FULL/ECO、FINAL、Multi Return、Mixboard、安装与故障排查。
+v1.5.18 的中文与英文手册均为 28 页，覆盖 Quick Start、Send、Return、PDC 与 Latency Rescue、Dry/Wet、QQ Bypass、PHASE、EQ Match、Spectrum、Waveform/WaveScope、Chain Note、FULL/ECO、FINAL、Multi Return、COMPARE/MIX、显示库、安装和故障排查。
 
-- 中文版：33 页
-- English: 34 pages
+The v1.5.18 Chinese and English manuals are both 28 pages and cover Quick Start, Send, Return, PDC and Latency Rescue, Dry/Wet, QQ Bypass, PHASE, EQ Match, Spectrum, Waveform/WaveScope, Chain Note, FULL/ECO, FINAL, Multi Return, COMPARE/MIX, display banks, installation, and troubleshooting.
 
-完整细节以 Release 中的对应 PDF 为准。  
-For complete operating details, use the matching PDF manual in the v1.2.17 Release.
+完整细节以 v1.5.18 Release 中对应 PDF 为准。
+For complete operating details, use the matching PDF manual in the v1.5.18 Release.
 
 ## FINAL 规则 / FINAL Rules
 
@@ -330,7 +415,7 @@ For reproducible bug reports, include OS, DAW/version, plug-in format/architectu
 
 ## 许可与使用 / License & Usage
 
-QQ ChainScope 为 Qing Audio 的专有软件，不开源。公开下载仅包含编译后的插件成品与文档，不包含源码。  
+QQ ChainScope 为 Qing Audio 的专有软件，不开源。公开下载仅包含编译后的插件成品与文档，不包含源码。
 QQ ChainScope is proprietary Qing Audio software and is not open source. Public downloads contain compiled plug-ins and documentation only, with no source code.
 
 ---
