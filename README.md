@@ -20,8 +20,10 @@
 
 ## 最新版本 / Latest Release
 
-**QQ ChainScope 1.5.18** 是当前最新公开稳定版本，发布日期为 **2026-09-01**。
-**QQ ChainScope 1.5.18** is the current latest public stable release, published on **2026-09-01**.
+**QQ ChainScope 1.5.18** 仍是当前公开版本；`Fixed Zero Reference Latency Rescue` 仍是稳定开发基线。
+**2026-09-04：** Release 成品已更新为同版本 Mixboard Waveform/WaveScope Stop HOLD Candidate；QQ Host/Cubase 人工验收仍待完成，本次没有提升稳定基线。
+**QQ ChainScope 1.5.18** remains the current public version; `Fixed Zero Reference Latency Rescue` remains the stable development baseline.
+**2026-09-04:** Release assets were refreshed with the same-version Mixboard Waveform/WaveScope Stop HOLD Candidate. QQ Host/Cubase acceptance remains pending, and the stable baseline was not promoted.
 
 - **[下载 v1.5.18 / Download v1.5.18](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.18)**
 - **[全部版本 / All releases](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases)**
@@ -195,6 +197,17 @@ FULL/ECO controls display analysis only and does not alter audio DSP. In Mixboar
 
 ## 1.5.18 更新 / What Changed in 1.5.18
 
+### 2026-09-04 同版本后续 / Same-Version Follow-up — Candidate
+
+- 中文：修复 QQ Host 中 DAW Stop 后 Mixboard Waveform/WaveScope 可能消失的问题。UI 现在拥有独立 COMPARE/MIX HOLD bank；停止后按稳定 Return UUID 保留仍存在的来源，删除 Return 导致槽位前移时不会清掉其它来源，新插入/替换 Return、换 Group、硬 reset 与下一次 Play 不会继承旧波形。
+- English: Fixed Mixboard Waveform/WaveScope disappearing after DAW Stop inside QQ Host. The UI now owns independent COMPARE/MIX HOLD banks; surviving Returns are preserved by stable UUID across slot compaction, while a new/replaced Return, Group change, hard reset, or next Play cannot inherit stale waveform data.
+- 中文：音频 DSP、PDC、Spectrum、EQ Match、PHASE、参数、默认值、Project State `61` 和 Runtime `v25` 均未改变。
+- English: Audio DSP, PDC, Spectrum, EQ Match, PHASE, parameters, defaults, Project State `61`, and Runtime `v25` are unchanged.
+- 中文：Windows 默认 Release 构建、三个 1.5.18 版本、Steinberg validator `0/0/0` 与 HOLD 模型 `13/13` 已通过；人工宿主验收尚未完成，因此本修订仍为 Candidate。
+- English: The default Windows Release build, all three v1.5.18 version checks, Steinberg validator `0/0/0`, and the `13/13` HOLD model passed. Manual host acceptance is still pending, so this revision remains Candidate.
+
+### 2026-08-31 稳定基线 / Stable Baseline
+
 1.5.18 简化并修正 Latency Rescue：Reference 永久固定为 0，移除 `SET REFERENCE`；停止播放后点击 `MEASURE & APPLY` 即可建立本次测量域，`Current = Residual =` 测得的 post-PDC 固定偏移。已经完成测量的旧工程会保留有符号 Residual 并无声迁移；只有旧 Reference、没有完成测量的状态会变为 `NO MEASUREMENT`。
 
 Version 1.5.18 simplifies and corrects Latency Rescue: Reference is permanently fixed at zero, `SET REFERENCE` is removed, and `MEASURE & APPLY` after Stop establishes the measurement domain with `Current = Residual =` the measured post-PDC fixed offset. Completed legacy measurements preserve signed Residual and migrate silently; Reference-only legacy state becomes `NO MEASUREMENT`.
@@ -293,6 +306,7 @@ Both the public README and the previous public Release ended at `1.2.17`; this u
 | **1.5.16** | 2026-08-25 · Stable | 中文：统一 MIX 与 COMPARE Spectrum 的固定绘图区几何，不改变 Spectrum 或音频算法。<br>English: Unified fixed MIX and COMPARE Spectrum plot geometry without changing Spectrum or audio algorithms. |
 | **1.5.17** | 2026-08-26 · Stable | 中文：加入工程恢复保护，防止重开工程时宿主临时格式清除已完成的 Latency Rescue；真实后续格式/Group 变化仍安全失效。<br>English: Added project-restore protection so provisional host formats cannot clear completed Latency Rescue; genuine later format/Group changes still invalidate safely. |
 | **1.5.18** | 2026-08-31 · 当前 Stable / Current Stable | 中文：Latency Rescue 的 Reference 固定为 0，移除 SET REFERENCE；停止播放后 MEASURE & APPLY 直接测量 post-PDC offset，并保存 Current=Residual。旧工程保留有符号 Residual 并无声迁移。<br>English: Fixed Latency Rescue Reference at 0, removed SET REFERENCE, and made MEASURE & APPLY directly store the measured post-PDC offset as Current=Residual after Stop. Legacy signed Residual migrates silently. |
+| **1.5.18 同版本后续 / Same-version follow-up** | 2026-09-04 · Candidate | 中文：修复 QQ Host 内 Mixboard Waveform/WaveScope 的 DAW Stop HOLD，并按稳定 UUID 保护删除、槽位前移和替换 Return 时的显示身份；DSP、PDC 与状态协议不变。<br>English: Fixed Mixboard Waveform/WaveScope DAW-Stop HOLD inside QQ Host, preserving display identity by stable UUID across Return deletion, compaction, and replacement; DSP, PDC, and state protocols are unchanged. |
 
 覆盖核对 / Coverage check: `1.2.18`, `1.3.0–1.3.10`, `1.4.0–1.4.7`, `1.5.0–1.5.18`; 遗漏版本：**无** / omitted versions: **none**.
 
