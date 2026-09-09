@@ -15,19 +15,80 @@
   <img src="assets/screenshots/02-mixboard-expanded-v1.2.17.png" alt="QQ ChainScope Mixboard with Spectrum and Waveform" width="100%">
 </p>
 
-> 上图保留为 1.2.17 历史界面示例；当前公开版本和实际操作请以 1.5.18 手册为准。
-> The image above is retained as a v1.2.17 historical UI example; use the v1.5.18 manuals for the current public version and workflow.
+> 上图保留为 1.2.17 历史界面示例；当前公开版本为 1.5.23，SSL 界面与切换方法见新版手册末尾两页。
+> The image above is retained as a v1.2.17 historical UI example; the current release is v1.5.23, with SSL appearance and switching guidance in the final two pages of the updated manuals.
 
 ## 最新版本 / Latest Release
+
+**QQ ChainScope 1.5.23 · Stable / 稳定版 · 2026-09-09**
+
+新增 Return / Mixboard SSL 皮肤，保留 Classic；记住上次外观选择，不强制改变其他已打开窗口。两种皮肤下 COMPARE / MIX 的频谱控件与绘图区高度均与 Return 对齐。
+
+Return / Mixboard now offer SSL alongside Classic, remembering the last choice without changing other open windows. Spectrum controls and plot heights match Return in both skins and both Mixboard modes.
+
+- **[下载 1.5.23 / Download 1.5.23](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.23)**
+- [全部历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+- [问题反馈 / Issues](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/issues)
+
+## 逐版本更新 / Version-by-version changes
+
+起点：公开 README 与最近一次 Release 均已记录至 1.5.18（包括 2026-09-04 Stop HOLD 后续）。以下覆盖随后真实发生的同版本 SSL 开发迭代以及 1.5.19、1.5.20、1.5.21、1.5.22、1.5.23；遗漏版本：无。中间候选未各自单独公开发布，其状态保留为历史事实。
+
+Starting point: both the public README and latest Release had reached 1.5.18, including the September 4 Stop HOLD follow-up. The entries below cover subsequent same-version SSL iterations and versions 1.5.19 through 1.5.23, with no omissions. Intermediate candidates were not separate public releases; their original status is retained as history.
+
+### 1.5.18 SSL 初版 / Initial SSL candidate — 2026-09-08
+
+中文：首次为 Return 增加可选 Classic / SSL 切换，默认仍为 Classic；主界面、Note 与 Settings 使用可切换的外观，选择单独保存供新窗口使用。Send 和当时的 Mixboard 保持 Classic。此阶段仍为同版本 Candidate，不改变音频处理或工程协议。
+
+English: Added the first optional Classic / SSL switch to Return, with Classic remaining the default. Main view, Note and Settings support the skin, and the choice is saved separately for new windows. Send and the then-current Mixboard remain Classic. This was a same-version Candidate with no audio or project-protocol changes.
+
+### 1.5.18 SSL 材质后续 / SSL material follow-up — 2026-09-08
+
+中文：根据实际界面反馈调整输出区材质、推子、Pan / Dry-Wet 旋钮比例、刻度与数值避让，并补齐 Note 的 SSL 外框和纸面。该同版本 R2 仅是历史开发标识；后续正式使用递增版本号。
+
+English: Refined output-panel materials, fader, Pan / Dry-Wet proportions, scale readability and value-label clearance from actual UI feedback, and completed Note's SSL frame and paper. The same-version R2 label is historical only; subsequent iterations use incremented version numbers.
+
+### 1.5.19 — 控制台控件 / Console controls — 2026-09-08
+
+中文：重新打磨银色推子帽、分列刻度、磨砂旋钮与实体按键；QQ 铭牌取消发光。SSL 数值框避让旋钮，刻度与推子帽共用显示映射；Classic、控制操作与音频增益含义不变。历史 Candidate。
+
+English: Refined the silver fader cap, separate scale, matte knobs and physical buttons; removed illumination from the QQ badge. SSL value labels clear the knobs, with one display mapping shared by the fader and ruler. Classic, control interaction and audio-gain meaning remain unchanged. Historical Candidate.
+
+### 1.5.20 — 选定的 SSL 美术 / Approved SSL appearance — 2026-09-08
+
+中文：按选定参考统一洁净中性灰面板、小巧银色推子、平顺黑色旋钮和清晰实体按键，减少粗糙、脏污与多余装饰。Note / Settings 同步材质，保留真实布局与原有读数。历史 Candidate。
+
+English: Unified the selected clean neutral-grey panels, compact silver fader, smooth black knobs and defined physical buttons, reducing rough texture and excess ornament. Note / Settings share the materials while real layout and readings are preserved. Historical Candidate.
+
+### 1.5.21 — Mixboard SSL — 2026-09-09
+
+中文：将 Return 的 SSL 材质应用到 Mixboard 的 COMPARE / MIX，保留 Classic、原布局和短行程推子比例。Settings 增加 UI STYLE；新窗口沿用最后选择，其他已开窗口不强制改变。Return 的 WET OUT / MAIN OUT 入口明确显示为按钮。历史 Candidate。
+
+English: Applied Return's SSL materials to Mixboard COMPARE / MIX, preserving Classic, layout and short-fader proportions. Settings adds UI STYLE; new windows follow the last choice without changing other open windows. Return's WET OUT / MAIN OUT entry is clearly presented as a button. Historical Candidate.
+
+### 1.5.22 — 频谱控件对齐 / Spectrum control alignment — 2026-09-09
+
+中文：在两种皮肤、两种 Mixboard 模式中采用 Return 的控件坐标：Slope 移到顶栏，AVG/PEAK 固定在频谱右上方，MIX 的 EQ Match 控件排在同一行；AMOUNT / SMOOTH 标题不动，来源图例避让控件。EQ Match 的原有显示条件不变。历史 Candidate。
+
+English: Matched Return's control positions in both skins and Mixboard modes: Slope moves to the title row, AVG/PEAK stays at the upper right inside Spectrum, and MIX EQ Match controls share one row. AMOUNT / SMOOTH captions stay in place and source legends clear the controls. Existing EQ Match visibility conditions remain unchanged. Historical Candidate.
+
+### 1.5.23 — 绘图区等高 / Matching plot height — 2026-09-09
+
+中文：Mixboard 的频谱绘图区顶部下移 6 个逻辑像素，与 Return 完全等高，COMPARE / MIX、Classic / SSL 均适用。控件本来已对齐，因此不再移动控件、标题、频谱底边或波形区。本版正式确认为 Stable；双语手册各追加两页 SSL 实际界面与操作说明，原 1.5.18 正文保留。
+
+English: Moved Mixboard's Spectrum plot top down by six logical pixels to match Return's height in COMPARE / MIX and Classic / SSL. Controls were already aligned, so controls, captions, the plot bottom and waveform area stay put. This version is confirmed Stable. Each bilingual manual appends two SSL UI and operation pages while retaining the original v1.5.18 body.
+
+### 先前公开状态 / Previous public status (historical)
 
 **QQ ChainScope 1.5.18** 仍是当前公开版本；`Fixed Zero Reference Latency Rescue` 仍是稳定开发基线。
 **2026-09-04：** Release 成品已更新为同版本 Mixboard Waveform/WaveScope Stop HOLD Candidate；QQ Host/Cubase 人工验收仍待完成，本次没有提升稳定基线。
 **QQ ChainScope 1.5.18** remains the current public version; `Fixed Zero Reference Latency Rescue` remains the stable development baseline.
 **2026-09-04:** Release assets were refreshed with the same-version Mixboard Waveform/WaveScope Stop HOLD Candidate. QQ Host/Cubase acceptance remains pending, and the stable baseline was not promoted.
 
-- **[下载 v1.5.18 / Download v1.5.18](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.18)**
-- **[全部版本 / All releases](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases)**
-- **[Issues / Bugs & Feedback](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/issues)**
+- **[下载 v1.5.18 / Download v1.5.18](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.18)**
+- **[全部版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)**
+- **[Issues / Bugs & Feedback](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/issues)**
+
 
 ## 为什么做 QQ ChainScope？ / Why QQ ChainScope?
 
@@ -48,7 +109,7 @@ Many plug-ins can tell you what **they** are doing. In a real mix, the more usef
 
 ## 三个组件，一套工作流 / Three Components, One Workflow
 
-当前 1.5.18 的 DAW 列表和实际 VST3 bundle 使用以下名称；三个组件必须始终保持同一版本：
+当前 1.5.23 的 DAW 列表和实际 VST3 bundle 使用以下名称；三个组件必须始终保持同一版本：
 
 | 插件 / Plug-in | 角色 / Role |
 |---|---|
@@ -312,21 +373,20 @@ Both the public README and the previous public Release ended at `1.2.17`; this u
 
 ## 下载 / Downloads
 
-v1.5.18 Release 提供以下 8 个用户文件 / The v1.5.18 Release provides these eight user files:
+**[QQ ChainScope 1.5.23 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.23)**
 
-- `QQ-ChainScope-1.5.18-Windows-x64-VST3.zip`
-- `QQ-ChainScope-1.5.18-macOS-Apple-Silicon-VST3.zip`
-- `QQ-ChainScope-1.5.18-macOS-Intel-x86_64-VST3.zip`
-- `QQ-ChainScope-1.5.18-macOS-Universal-2-AU.zip`
-- `QQ-ChainScope-1.5.18-Installation-Guide-Chinese.txt`
-- `QQ-ChainScope-1.5.18-Installation-Guide-English.txt`
-- `QQ-ChainScope-User-Manual-Chinese-v1.5.18.pdf`
-- `QQ-ChainScope-User-Manual-English-v1.5.18.pdf`
+- [Windows x64 VST3](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.5.23/QQ-ChainScope-1.5.23-Windows-x64-VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.5.23/QQ-ChainScope-1.5.23-macOS-Apple-Silicon-VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.5.23/QQ-ChainScope-1.5.23-macOS-Intel-x86_64-VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.5.23/QQ-ChainScope-1.5.23-macOS-Universal-2-AU.zip)
+- [中文安装说明](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.5.23/QQ-ChainScope-1.5.23-Installation-Guide-Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.5.23/QQ-ChainScope-1.5.23-Installation-Guide-English.txt)
+- [中文用户手册（30 页）](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.5.23/QQ-ChainScope-User-Manual-Chinese-v1.5.23.pdf)
+- [English user manual (30 pages)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.5.23/QQ-ChainScope-User-Manual-English-v1.5.23.pdf)
 
-**[前往 v1.5.18 Release 下载 / Open the v1.5.18 Release](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.5.18)**
+三个插件必须同版本、一起升级。Apple Silicon / Intel VST3 只装一个架构包；Rosetta 宿主选择 Intel；AU 是独立格式。GitHub 自动附带的 Source code 下载仅为本公开文档仓库，不包含插件源码。
 
-A Send、B Return 和 C Mixboard 必须保持同一版本并一起更新。
-A Send, B Return, and C Mixboard must remain on the same version and be updated together.
+Keep all three plugins on the same version. Install only one VST3 architecture; use Intel for a Rosetta host. AU is a separate format. GitHub's automatic Source code downloads contain this public documentation repository only, not the plugin source.
 
 ## 安装 / Install
 
@@ -335,7 +395,7 @@ A Send, B Return, and C Mixboard must remain on the same version and be updated 
 1. 完全退出 DAW。
 2. 删除系统 VST3 目录中旧版或旧命名的三个 ChainScope bundle；不要保留重复版本。
 3. 解压 Windows 包。
-4. 将三个 1.5.18 `.vst3` bundle 放到：
+4. 将三个 1.5.23 `.vst3` bundle 放到：
 
 ```text
 C:\Program Files\Common Files\VST3
@@ -391,12 +451,11 @@ The macOS builds are ad-hoc signed and build-validated, but **not notarized with
 
 ## 用户手册 / User Manuals
 
-v1.5.18 的中文与英文手册均为 28 页，覆盖 Quick Start、Send、Return、PDC 与 Latency Rescue、Dry/Wet、QQ Bypass、PHASE、EQ Match、Spectrum、Waveform/WaveScope、Chain Note、FULL/ECO、FINAL、Multi Return、COMPARE/MIX、显示库、安装和故障排查。
+1.5.23 中英文手册各 30 页：原 1.5.18 正文 28 页完全保留，结尾新增两页 Return / Mixboard SSL 实际界面、Settings 切换方法、记忆行为和频谱布局说明。原 Quick Start、PDC、Latency Rescue、PHASE、EQ Match、Note、FULL/ECO、FINAL、COMPARE/MIX、安装与故障排查内容不删改。
 
-The v1.5.18 Chinese and English manuals are both 28 pages and cover Quick Start, Send, Return, PDC and Latency Rescue, Dry/Wet, QQ Bypass, PHASE, EQ Match, Spectrum, Waveform/WaveScope, Chain Note, FULL/ECO, FINAL, Multi Return, COMPARE/MIX, display banks, installation, and troubleshooting.
+Both v1.5.23 manuals have 30 pages: all 28 original v1.5.18 pages are retained, followed by two pages of actual Return / Mixboard SSL UI, Settings instructions, remembered-choice behavior and Spectrum layout guidance. Existing Quick Start, PDC, Latency Rescue, PHASE, EQ Match, Note, FULL/ECO, FINAL, COMPARE/MIX, installation and troubleshooting remain intact.
 
-完整细节以 v1.5.18 Release 中对应 PDF 为准。
-For complete operating details, use the matching PDF manual in the v1.5.18 Release.
+SSL 是本项目的皮肤名称，不表示官方合作、授权或背书。/ SSL is a skin name, not an affiliation, licensing or endorsement claim.
 
 ## FINAL 规则 / FINAL Rules
 
@@ -413,7 +472,7 @@ For complete operating details, use the matching PDF manual in the v1.5.18 Relea
 
 ## 问题与反馈 / Bugs & Feedback
 
-请使用本仓库的 **[Issues](https://github.com/Ziqing-Gu/Plugin-Nurse-QQ-ChainScope-Release/issues)** 提交可复现问题，并尽量附上：
+请使用本仓库的 **[Issues](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/issues)** 提交可复现问题，并尽量附上：
 
 - 操作系统与版本；
 - DAW 与版本；
