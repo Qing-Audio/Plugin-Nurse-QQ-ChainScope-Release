@@ -25,9 +25,9 @@ Choose from **four UI styles: Classic, SSL, Light and Dark**. Version 1.6.2 refi
 
 ## 四种界面 / Four UI styles
 
-在 **B Return 或 C Mixboard** 中，点击右上角 **Settings 齿轮 → UI STYLE**，选择喜欢的风格即可。A Send 使用 Classic 界面。
+在 **B Return 或 C Mixboard** 中，点击顶部的 **Settings 齿轮**（B Return 中位于 NOTE 右侧），在 **UI STYLE** 中选择喜欢的风格即可。A Send 使用 Classic 界面。
 
-In **B Return or C Mixboard**, click the **Settings gear at the top right → UI STYLE** and choose a style. A Send uses Classic.
+In **B Return or C Mixboard**, click the **Settings gear at the top** (next to NOTE in B Return), then choose a style under **UI STYLE**. A Send uses Classic.
 
 ### Classic
 
