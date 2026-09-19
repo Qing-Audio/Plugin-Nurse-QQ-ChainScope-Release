@@ -10,7 +10,7 @@ QQ ChainScope helps you compare audio before and after processing, match loudnes
 
 This is proprietary Qing Audio software. Source remains private; this public repository provides compiled products, manuals, screenshots, and release notes.
 
-## 下载 / Downloads
+## 最新版本与下载 / Latest Release and Downloads
 
 **[QQ ChainScope 1.7.7 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.7)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
@@ -167,9 +167,9 @@ Every actual development version in this interval is listed below. Some intermed
 
 ## 1.6.2 及以前的完整历史 / Complete earlier history
 
-以下保留之前公开过的说明和记录；其中版本号、验证和“当前”字样属于当时的历史状态。当前安装与功能以本页上方 1.7.7 及随包手册为准。
+以下保留 1.6.2 及以前的历史说明和记录，适用于各自版本。当前最新版为 1.7.7，安装与功能以本页上方说明及随包手册为准。
 
-The earlier published text is retained below. Its versions, validation results, and references to “current” describe those historical checkpoints. Use the 1.7.7 guidance above and the current manuals for installation and operation.
+The historical documentation below applies to versions 1.6.2 and earlier. The latest release is 1.7.7; use the guidance above and its accompanying manuals for installation and operation.
 
 # 插件护士 - QQ ChainScope
 
@@ -184,7 +184,7 @@ The earlier published text is retained below. Its versions, validation results, 
 > **QQ ChainScope 是专有软件，不开源。** 本公开仓库只提供编译后的插件成品、文档、截图和版本说明；源码仓库保持私有。
 > **QQ ChainScope is proprietary software and is not open source.** This public repository contains compiled plug-ins, documentation, screenshots, and release information only; the source repository remains private.
 
-## 最新版本 / Latest Release
+## 历史版本 1.6.2 / Historical Release 1.6.2
 
 **QQ ChainScope 1.6.2 · 2026-09-10**
 
@@ -244,9 +244,9 @@ English: SSL faders use the selected silver reference appearance while preservin
 
 ## 1.5.18 → 1.5.23 历史更新 / Historical changes
 
-起点：公开 README 与最近一次 Release 均已记录至 1.5.18（包括 2026-09-04 Stop HOLD 后续）。以下覆盖随后真实发生的同版本 SSL 开发迭代以及 1.5.19、1.5.20、1.5.21、1.5.22、1.5.23；遗漏版本：无。中间候选未各自单独公开发布，其状态保留为历史事实。
+起点：当时的公开 README 与最近一次 Release 均已记录至 1.5.18（包括 2026-09-04 Stop HOLD 后续）。以下覆盖随后真实发生的同版本 SSL 开发迭代以及 1.5.19、1.5.20、1.5.21、1.5.22、1.5.23；遗漏版本：无。中间候选未各自单独公开发布，其状态保留为历史事实。
 
-Starting point: both the public README and latest Release had reached 1.5.18, including the September 4 Stop HOLD follow-up. The entries below cover subsequent same-version SSL iterations and versions 1.5.19 through 1.5.23, with no omissions. Intermediate candidates were not separate public releases; their original status is retained as history.
+Starting point: both the public README and the then-latest Release had reached 1.5.18, including the September 4 Stop HOLD follow-up. The entries below cover subsequent same-version SSL iterations and versions 1.5.19 through 1.5.23, with no omissions. Intermediate candidates were not separate public releases; their original status is retained as history.
 
 ### 1.5.18 SSL 初版 / Initial SSL candidate — 2026-09-08
 
@@ -578,7 +578,7 @@ Both the public README and the previous public Release ended at `1.2.17`; this u
 | **1.5.15** | 2026-08-25 · Stable | 中文：FULL 下 COMPARE/MIX 同时维护独立分析与显示/HOLD bank；修复 Stop 后 VIS/Delta 更新，并统一 MIX Slope 布局。<br>English: Added independent simultaneous COMPARE/MIX analysis and display/HOLD banks in FULL, fixed stopped VIS/Delta updates, and aligned MIX Slope layout. |
 | **1.5.16** | 2026-08-25 · Stable | 中文：统一 MIX 与 COMPARE Spectrum 的固定绘图区几何，不改变 Spectrum 或音频算法。<br>English: Unified fixed MIX and COMPARE Spectrum plot geometry without changing Spectrum or audio algorithms. |
 | **1.5.17** | 2026-08-26 · Stable | 中文：加入工程恢复保护，防止重开工程时宿主临时格式清除已完成的 Latency Rescue；真实后续格式/Group 变化仍安全失效。<br>English: Added project-restore protection so provisional host formats cannot clear completed Latency Rescue; genuine later format/Group changes still invalidate safely. |
-| **1.5.18** | 2026-08-31 · 当前 Stable / Current Stable | 中文：Latency Rescue 的 Reference 固定为 0，移除 SET REFERENCE；停止播放后 MEASURE & APPLY 直接测量 post-PDC offset，并保存 Current=Residual。旧工程保留有符号 Residual 并无声迁移。<br>English: Fixed Latency Rescue Reference at 0, removed SET REFERENCE, and made MEASURE & APPLY directly store the measured post-PDC offset as Current=Residual after Stop. Legacy signed Residual migrates silently. |
+| **1.5.18** | 2026-08-31 · 历史稳定版 / Historical Stable | 中文：Latency Rescue 的 Reference 固定为 0，移除 SET REFERENCE；停止播放后 MEASURE & APPLY 直接测量 post-PDC offset，并保存 Current=Residual。旧工程保留有符号 Residual 并无声迁移。<br>English: Fixed Latency Rescue Reference at 0, removed SET REFERENCE, and made MEASURE & APPLY directly store the measured post-PDC offset as Current=Residual after Stop. Legacy signed Residual migrates silently. |
 | **1.5.18 同版本后续 / Same-version follow-up** | 2026-09-04 · Candidate | 中文：修复 QQ Host 内 Mixboard Waveform/WaveScope 的 DAW Stop HOLD，并按稳定 UUID 保护删除、槽位前移和替换 Return 时的显示身份；DSP、PDC 与状态协议不变。<br>English: Fixed Mixboard Waveform/WaveScope DAW-Stop HOLD inside QQ Host, preserving display identity by stable UUID across Return deletion, compaction, and replacement; DSP, PDC, and state protocols are unchanged. |
 
 覆盖核对 / Coverage check: `1.2.18`, `1.3.0–1.3.10`, `1.4.0–1.4.7`, `1.5.0–1.5.18`; 遗漏版本：**无** / omitted versions: **none**.
