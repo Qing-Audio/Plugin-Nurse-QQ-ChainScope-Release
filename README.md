@@ -1,3 +1,176 @@
+# 插件护士 - QQ ChainScope 1.7.7
+
+**Qing Audio · 1.7.7 Stable · 2026-09-20**
+
+QQ ChainScope 帮你在工程里比较处理前后的声音、匹配音量与音色，并按比例混合不同处理。同轨可以比较原始声音与最多四套效果器方案；多轨可以用 B Return 管两轨，或用 D Mixboard 控制最多六个分轨。
+
+QQ ChainScope helps you compare audio before and after processing, match loudness and tone, and blend processing choices. On one track, compare Original with up to four effects chains. Across tracks, use B Return for two tracks or D Mixboard for up to six.
+
+本项目为 Qing Audio 专有软件，源码保持私有。本公开仓库只提供成品、手册、截图和版本说明。
+
+This is proprietary Qing Audio software. Source remains private; this public repository provides compiled products, manuals, screenshots, and release notes.
+
+## 下载 / Downloads
+
+**[QQ ChainScope 1.7.7 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.7)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+
+- [QQ-ChainScope-1.7.7-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-Installation-Guide-Chinese.txt)
+- [QQ-ChainScope-1.7.7-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.7.7-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.7.7-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.7.7-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.7.7-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-macOS-Universal-2-AU.zip)
+- [QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf)
+- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
+
+Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
+
+Use x64 VST3 on Windows. For macOS VST3, choose arm64 for a native Apple Silicon host or x86_64 for Intel/Rosetta; install only one architecture. AU is a separate Universal 2 format containing both architectures. Every platform package contains A/B/C/D; upgrade all four together.
+
+## 它能帮你做的 12 件事 / Twelve things it helps you do
+
+| # | 中文 | English |
+|---|---|---|
+| 1 | **对比处理前／后**：查看 Peak、True Peak、RMS、LUFS-I、Spectrum 与 Waveform。 | **Compare before and after**: View Peak, True Peak, RMS, LUFS-I, Spectrum, and Waveform. |
+| 2 | **匹配前／后音量**：用 Match 减少“更响所以更好听”的误判。 | **Match before / after loudness**: Use Match to avoid mistaking louder for better. |
+| 3 | **Dry / Wet 与 ADD Wet**：混合原声（Dry）与效果器处理后的声音（Wet）；打开 ADD，可保持原声 100%，再把处理后的声音叠加上去。 | **Dry / Wet and ADD Wet**: Blend the original sound (Dry) with the sound after effects (Wet). Enable ADD to keep Dry at 100% and layer the processed sound on top. |
+| 4 | **校准相位偏移**：检查并修正处理链带来的相位偏移。 | **Correct phase offsets**: Inspect and correct phase offsets introduced by the processing chain. |
+| 5 | **校准硬件左右电平**：修正硬件额外引入的 L/R 失配，保留素材原有的立体声关系。 | **Calibrate hardware L/R levels**: Correct the extra L/R mismatch introduced by hardware while preserving the source stereo relationship. |
+| 6 | **修正残余延迟**：部分插件误报延迟，导致 DAW 无法正确补偿时，用 Latency Rescue 补齐。 | **Correct residual latency**: If a plug-in reports the wrong latency and the DAW cannot compensate correctly, use Latency Rescue to close the gap. |
+| 7 | **EQ Match 音色匹配**：让 Wet 或 Main Out（Dry/Wet 混合后的信号）的音色接近 Before，自由调整匹配强度和频段。 | **Match tone with EQ Match**: Bring Wet or Main Out (the signal after Dry/Wet mixing) closer to Before. Adjust the correction amount and frequency range. |
+| 8 | **把硬件现场留在工程里**：用 Chain Note 保存旋钮照片、接线、参数与备注。 | **Keep hardware notes in the session**: Use Chain Note to save knob photos, patching, settings, and comments. |
+| 9 | **单轨比较或混合多套方案**：用 C Mixboard 比较处理前的原始信号和最多四组效果器方案的差异，或按比例混合。 | **Compare or mix chains on one track**: Use C Mixboard to compare the original signal with up to four effects chains, or blend them by percentage. |
+| 10 | **跨轨对比与混合**：用 B Return 对比两条轨道，通过 Dry/Wet 调整两轨的音量比例。 | **Compare and blend two tracks**: Use B Return to compare two tracks and adjust their level balance with Dry/Wet. |
+| 11 | **集中控制六路声音**：用 D Mixboard 控制最多六个分轨，进行比较、混合、监听和 EQ Match。 | **Control up to six tracks**: Use D Mixboard to compare, mix, monitor, and EQ Match up to six tracks. |
+| 12 | **独立分析与监听**：B Return、C Mixboard 可独立查看图表，调节音量、声像、极性与监听。 | **Standalone analysis and monitoring**: Use B Return or C Mixboard on its own to view graphs and control level, pan, polarity, and monitoring. |
+
+## 四类组件与连接 / Components and connection
+
+| 插件 / Plug-in | 用途 / Purpose |
+|---|---|
+| A Send | 留下原始参考并建立 Group。/ Capture Original and establish a Group. |
+| B Return | 处理前后测量、校准与 Dry/Wet；也可作两轨控制器或 Standalone。/ Measure, calibrate, and blend Dry/Wet; also two-track control or Standalone. |
+| C Mixboard | 同轨 Original + 最多四个 Return；Standalone 时处理本轨的图表和监听。/ Original plus up to four same-track Returns; local analysis and monitoring in Standalone. |
+| D Mixboard | 遥控最多六轨，第一路为 Before；各轨沿原路由出声。/ Control up to six tracks; lane 1 is Before and audio remains on each source track. |
+
+**单轨 / Single track:** `A Send → 效果器 / effects → B Return (FINAL) → C Mixboard（可选 / optional）`。多 Return 时，最后一个 Return 必须为 FINAL，各套处理都从同一个 Original 出发；C 放在 FINAL 后面。
+
+With multiple Returns, set the physically last Return to FINAL; every chain starts from the same Original. Place C after FINAL.
+
+**多轨 / Multi Track:** 各轨最后的 A/B/C 点亮三个竖长方形图标。B 选择另一轨带 `[Multi Track]` 的 Group 来控制两轨；D 选择最多六个 Group。D 可挂在任意轨道，自身不增加音频延迟，音量、Monitor 和隐藏 EQ 在各轨 A/B/C 中生效。
+
+Enable the three-rectangle icon on the final A/B/C in each participating track. B selects another track's `[Multi Track]` Group for two-track control; D selects up to six Groups. D can be placed anywhere and adds no audio latency itself. Level, Monitor, and hidden EQ processing run in the source A/B/C plug-ins.
+
+原始轨给其他轨发送时，把 A Send 放在推子后 Insert，并使用推子前发送，避免 Compare 静音 Original 时把其他轨的输入也切断。旁通 D 后遥控参数仍有效；删除 D 会清除其相关隐藏处理。完整步骤及 C/D 旁通差异见随包手册。
+
+When the original feeds other tracks, place A Send in a post-fader insert slot and use pre-fader sends so muting Original in Compare keeps those tracks fed. Bypassing D leaves remote settings active; removing D clears its related hidden processing. The included manuals explain the full steps and C/D bypass differences.
+
+## EQ Match
+
+Wet 与 Main Out（Dry/Wet 混合后的信号）都能匹配到 Before，分别保存设置。B/C/D 提供线性相位开关、Amount、Smooth 与匹配后可拖动的频率范围。切换相位模式时，DAW 更新延迟补偿可能造成短暂断音。
+
+Wet and Main Out (the Dry/Wet blend) can both match Before and keep separate settings. B/C/D offer a phase-mode switch, Amount, Smooth, and frequency boundaries adjustable after matching. Changing phase mode may briefly interrupt audio while the DAW updates compensation.
+
+## 四种界面 / Four UI styles
+
+Classic、SSL、Light、Dark 功能相同。A Send 在主界面 **UI STYLE** 中选择；B Return、C Mixboard、D Mixboard 在顶部 **Settings 齿轮 → UI STYLE** 中选择。
+
+Classic, SSL, Light, and Dark share the same functions. A Send: **UI STYLE** on the main panel. B Return, C Mixboard, D Mixboard: **top Settings gear → UI STYLE**.
+
+### Classic
+
+![QQ ChainScope 1.7.7 Classic](assets/screenshots/1.7.7/b-classic.png)
+
+### SSL
+
+![QQ ChainScope 1.7.7 SSL](assets/screenshots/1.7.7/b-ssl.png)
+
+### Light
+
+![QQ ChainScope 1.7.7 Light](assets/screenshots/1.7.7/b-light.png)
+
+### Dark
+
+![QQ ChainScope 1.7.7 Dark](assets/screenshots/1.7.7/b-dark.png)
+
+## 安装、升级与兼容性 / Installation, upgrades and compatibility
+
+- Windows 10/11 x64，安装到 `C:\Program Files\Common Files\VST3`。macOS 部署目标为 11.0 或更高；VST3 放到 `~/Library/Audio/Plug-Ins/VST3`，AU 放到 `~/Library/Audio/Plug-Ins/Components`。
+- 关闭 DAW 后更新完整四件套，避免用户目录、系统目录或旧命名下有重复版本，然后重新扫描。D 为本次相对 1.6.2 新加入的插件。
+- macOS 成品为 ad-hoc 签名，未经过 Apple Developer ID 公证。需要处理 quarantine 时，按随包安装说明操作。
+- QQ Host 内的跨进程多轨兼容仍待处理。DAW 路由、轨道身份和延迟补偿行为可能影响跨轨连接与切换；插件应处于各参与轨处理链的最后。新装后先用工程副本检查。
+- Windows 10/11 x64: `C:\Program Files\Common Files\VST3`. macOS deployment target: 11.0 or later. Use `~/Library/Audio/Plug-Ins/VST3` for VST3 and `~/Library/Audio/Plug-Ins/Components` for AU.
+- Quit the DAW, update the complete four-plug-in set, remove duplicate old copies, and rescan. D is newly added relative to 1.6.2.
+- macOS builds are ad-hoc signed and not Apple Developer ID notarized. Follow the included installation guide if quarantine prevents loading.
+- QQ Host cross-process Multi Track remains pending. DAW routing, track identity, and delay compensation can affect cross-track connections and transitions. Put each participating endpoint last in its track's chain, and check a copy of the session after upgrading.
+
+两份手册各 48 页：先讲 12 项用途，再讲单轨、B 两轨和 D 多轨；以前的重要提示与说明保留。/ Both manuals have 48 pages: twelve uses, single-track operation, B two-track mode, and D multi-track mode, retaining important earlier guidance.
+
+## 1.6.2 → 1.7.7 更新 / Changes since 1.6.2
+
+以下列出这段时间实际开发过的全部版本。部分中间版本只用于测试，其改进和后续修正已合并到 1.7.7。
+
+Every actual development version in this interval is listed below. Some intermediate versions were test candidates; their improvements and subsequent corrections are incorporated into 1.7.7.
+
+### 1.6.3 — 停播与测量保留 / Stop behavior and retained measurements
+
+- 中文：修正 QQ Host 内停播后重复播放旧缓冲造成的拖尾；实际延迟播放完后归零。停止后保留 Match、Cal、PHASE 和 EQ Match 的测量参考，重置时清除。
+- English: Fixed repeated stale-buffer tails after stopping inside QQ Host. Output becomes silent after the actual delayed audio finishes. Match, Cal, PHASE, and EQ Match references remain available after Stop and clear on reset.
+
+### 1.6.4 — 清晰文字与 Send 皮肤 / Readable text and Send skins
+
+- 中文：SSL、Light、Dark 的小字放大加粗；顶部插件身份和 Group 名称更清楚，Group 名称紧跟身份显示。A Send 加入四种皮肤，在主界面 UI STYLE 中选择。该版本曾由用户指定为 Stable。
+- English: Enlarged and strengthened small text in SSL, Light, and Dark. The plug-in identity and Group name are easier to read, with the Group beside the identity. A Send gains all four skins through UI STYLE on its main panel. This version was a user-designated Stable baseline.
+
+### 1.7.0 — 多轨开发与复制轨道连接 / Multi-track development and copied-track links
+
+- 中文：加入 Multi Track 开关和 D Mixboard 的初版五路接收方案；B/C 的普通 Group 列表按宿主提供的轨道信息筛选。复制 Cubase/Nuendo 整轨后，新 Send 建立独立副本 Group，Return 和 C 尝试保留原连接关系。初版跨轨接收仍有宿主时序和延迟问题，随后在 1.7.1 改为遥控方案；初版接收器不作为当前功能提供。
+- English: Introduced Multi Track controls and an initial five-source D Mixboard receiver. B/C filter ordinary Groups using host track information. Duplicating a complete Cubase/Nuendo track creates an independent copied Send Group, and Return/C attempt to retain the original link arrangement. Host timing and latency issues in the initial receiver led to the remote-control redesign in 1.7.1; that receiver is not the current architecture.
+
+### 1.7.1 — 六路多轨遥控 / Six-track remote control
+
+- 中文：D 改为最多六路的遥控器，自身不增加音频延迟；各轨 A/B/C 继续通过原路由出声，并在内部执行最终音量、Monitor 与 EQ Match。第一路作为 Before，隐藏 EQ 的延迟由 D 统一设置。删除 D 清除相关隐藏处理，圆形箭头可重新同步。完善 FULL/ECO、Alt+Link 和工程恢复。原始轨给其他轨发送时，应把 A Send 放在推子后，并使用推子前发送。
+- English: Redesigned D as a controller for up to six tracks with no audio latency of its own. Each source A/B/C keeps its original audio routing and applies final level, Monitor, and EQ Match internally. Lane 1 is Before; D sets a common hidden EQ delay. Removing D clears its hidden processing, and the circular arrow resynchronizes linked settings. Refined FULL/ECO, Alt+Link, and session restoration. When the original feeds other tracks, place A Send post-fader and use pre-fader sends.
+
+### 1.7.2 — B Input 撤销 / B Input undo
+
+- 中文：修正 B Return 的 Input 调节不能 Ctrl+Z／Ctrl+Shift+Z 的问题，涵盖拖动、滚轮、键盘、数值输入和重置。本版本已构建，但安装被宿主占用阻止，随后由 1.7.3 接替。
+- English: Fixed Ctrl+Z / Ctrl+Shift+Z for B Return Input changes, including dragging, wheel, keyboard, numeric entry, and reset. This candidate was built, but installation was blocked by running hosts and it was superseded by 1.7.3.
+
+### 1.7.3 — D 切换过渡 / D switching transitions
+
+- 中文：保留 Input 撤销修复，将 D 的切换过渡从 20 ms 延长到 50 ms，缓解原始轨与发送处理轨切换时的短暂断音；D 自身仍不增加音频延迟。实际效果仍受 DAW 路由与各轨延迟补偿影响。
+- English: Retained the Input undo fix and lengthened D transitions from 20 ms to 50 ms to reduce brief gaps when switching between the original and send-fed processing tracks. D still adds no audio latency. Actual results depend on DAW routing and track compensation.
+
+### 1.7.4 — C Standalone
+
+- 中文：C 的 Group 菜单新增 None [Standalone]。Compare 与 Mix 都只有本轨 Original，可看频谱和波形，并使用 Monitor、推子、L/R、Pan 与极性；After 跟随输出调节。该版本曾由用户指定为 Stable。
+- English: Added None [Standalone] to C's Group menu. Compare and Mix contain only the local Original, with spectrum, waveform, Monitor, output fader, L/R, Pan, and polarity controls. After follows output adjustments. This version was a user-designated Stable baseline.
+
+### 1.7.5 — B 两轨与新版 EQ Match / B two-track mode and expanded EQ Match
+
+- 中文：B 可以选择其他轨的 [Multi Track] Group，通过 Dry/Wet 或 ADD 控制两轨音量配比；音频仍由各轨输出。B 的 Wet 和 Main Out 分别保存 EQ Match。B/C/D 新增 LINEAR PHASE 开关及匹配后可拖动的频率范围，支持撤销、重做和 Alt 恢复全频段。初版跨轨选择问题在 1.7.6 修正。
+- English: B can select another track's [Multi Track] Group and control the two-track balance with Dry/Wet or ADD while audio remains on each track. B keeps separate Wet and Main Out EQ Match settings. B/C/D gain LINEAR PHASE and adjustable frequency boundaries after matching, with undo, redo, and Alt full-range reset. The initial cross-track selection issue was corrected in 1.7.6.
+
+### 1.7.6 — 两轨连接修复与分类统一 / Two-track connection fix and matching category
+
+- 中文：修正菜单显示 [Multi Track] 却仍沿用普通 Group 连接的情况，包括再次选择同一 Group 和来源后来开启多轨。核验 Dry/Wet、ADD、QQ Bypass、Before 波形与快速调节行为。D 的 VST3 分类改为 Fx，与 A/B/C 一致。
+- English: Fixed cases where the menu showed [Multi Track] while retaining an ordinary Group connection, including reselecting the same Group and enabling Multi Track later at the source. Checked Dry/Wet, ADD, QQ Bypass, Before waveform, and fast balance changes. D now uses the Fx VST3 category, matching A/B/C.
+
+### 1.7.7 — Standalone B 独立 Group / Independent Group for Standalone B
+
+- 中文：Standalone B 开启 Multi Track 后可直接编辑自己的 Group Name，无需 Return Name，D 可按此名称找到它。名称随工程保存，关闭再开启多轨仍保留；复制会建立独立副本 Group。当前版本已由用户指定为 Stable。配套中英文手册均为 48 页，保留原有重要提示并补齐 12 项用途、两轨、多轨和 EQ Match 新功能。
+- English: Standalone B can edit its own Group Name when Multi Track is enabled, without a separate Return Name, and D discovers it by that name. The name persists with the session and across toggling; duplication creates an independent copied Group. This is the current user-designated Stable version. Both accompanying manuals have 48 pages, retaining important earlier guidance and adding twelve uses, two-track and multi-track operation, and the expanded EQ Match controls.
+
+
+---
+
+## 1.6.2 及以前的完整历史 / Complete earlier history
+
+以下保留之前公开过的说明和记录；其中版本号、验证和“当前”字样属于当时的历史状态。当前安装与功能以本页上方 1.7.7 及随包手册为准。
+
+The earlier published text is retained below. Its versions, validation results, and references to “current” describe those historical checkpoints. Use the 1.7.7 guidance above and the current manuals for installation and operation.
+
 # 插件护士 - QQ ChainScope
 
 **Qing Audio 官方下载与发布页 / Official downloads and releases by Qing Audio**
