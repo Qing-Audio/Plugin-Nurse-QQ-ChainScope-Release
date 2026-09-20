@@ -1,6 +1,6 @@
-# 插件护士 - QQ ChainScope 1.7.7
+# 插件护士 - QQ ChainScope 1.7.9
 
-**Qing Audio · 1.7.7 Stable · 2026-09-20**
+**Qing Audio · 1.7.9 Stable · 2026-09-21**
 
 QQ ChainScope 帮你在工程里比较处理前后的声音、匹配音量与音色，并按比例混合不同处理。同轨可以比较原始声音与最多四套效果器方案；多轨可以用 B Return 管两轨，或用 D Mixboard 控制最多六个分轨。
 
@@ -12,16 +12,16 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 ## 最新版本与下载 / Latest Release and Downloads
 
-**[QQ ChainScope 1.7.7 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.7)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+**[QQ ChainScope 1.7.9 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.9)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ-ChainScope-1.7.7-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-Installation-Guide-Chinese.txt)
-- [QQ-ChainScope-1.7.7-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-Installation-Guide-English.txt)
-- [QQ-ChainScope-1.7.7-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.7.7-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.7.7-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.7.7-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-1.7.7-macOS-Universal-2-AU.zip)
-- [QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf)
-- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.7/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
+- [QQ-ChainScope-1.7.9-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.9/QQ-ChainScope-1.7.9-Installation-Guide-Chinese.txt)
+- [QQ-ChainScope-1.7.9-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.9/QQ-ChainScope-1.7.9-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.7.9-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.9/QQ-ChainScope-1.7.9-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.7.9-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.9/QQ-ChainScope-1.7.9-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.7.9-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.9/QQ-ChainScope-1.7.9-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.7.9-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.9/QQ-ChainScope-1.7.9-macOS-Universal-2-AU.zip)
+- [QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.9/QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf)
+- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.9/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
 
 Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
 
@@ -96,17 +96,36 @@ Classic, SSL, Light, and Dark share the same functions. A Send: **UI STYLE** on 
 ## 安装、升级与兼容性 / Installation, upgrades and compatibility
 
 - Windows 10/11 x64，安装到 `C:\Program Files\Common Files\VST3`。macOS 部署目标为 11.0 或更高；VST3 放到 `~/Library/Audio/Plug-Ins/VST3`，AU 放到 `~/Library/Audio/Plug-Ins/Components`。
-- 关闭 DAW 后更新完整四件套，避免用户目录、系统目录或旧命名下有重复版本，然后重新扫描。D 为本次相对 1.6.2 新加入的插件。
+- 关闭 DAW 后更新完整四件套，避免用户目录、系统目录或旧命名下有重复版本，然后重新扫描。D 从 1.7.x 起随四件套提供。
 - macOS 成品为 ad-hoc 签名，未经过 Apple Developer ID 公证。需要处理 quarantine 时，按随包安装说明操作。
 - QQ Host 内的跨进程多轨兼容仍待处理。DAW 路由、轨道身份和延迟补偿行为可能影响跨轨连接与切换；插件应处于各参与轨处理链的最后。新装后先用工程副本检查。
 - Windows 10/11 x64: `C:\Program Files\Common Files\VST3`. macOS deployment target: 11.0 or later. Use `~/Library/Audio/Plug-Ins/VST3` for VST3 and `~/Library/Audio/Plug-Ins/Components` for AU.
-- Quit the DAW, update the complete four-plug-in set, remove duplicate old copies, and rescan. D is newly added relative to 1.6.2.
+- Quit the DAW, update the complete four-plug-in set, remove duplicate old copies, and rescan. D is included in the four-plug-in set from 1.7.x onward.
 - macOS builds are ad-hoc signed and not Apple Developer ID notarized. Follow the included installation guide if quarantine prevents loading.
 - QQ Host cross-process Multi Track remains pending. DAW routing, track identity, and delay compensation can affect cross-track connections and transitions. Put each participating endpoint last in its track's chain, and check a copy of the session after upgrading.
 
 两份手册各 48 页：先讲 12 项用途，再讲单轨、B 两轨和 D 多轨；以前的重要提示与说明保留。/ Both manuals have 48 pages: twelve uses, single-track operation, B two-track mode, and D multi-track mode, retaining important earlier guidance.
 
-## 1.6.2 → 1.7.7 更新 / Changes since 1.6.2
+
+本包沿用已确认的 1.7.7 版中英文手册，各 48 页；操作步骤同样适用于 1.7.9。本次修复见下方版本记录。
+
+The approved 48-page 1.7.7 manuals are included unchanged. Their operating instructions also apply to 1.7.9; the fixes are listed below.
+
+## 1.7.7 → 1.7.9 更新 / Changes since 1.7.7
+
+### 1.7.9 — EQ Match alignment / EQ Match 对齐
+
+- 中文：修复最小相位下 Before/Dry 与 Match 旁通路径多出约 80 ms 延迟的问题，涉及 B Return、C Mixboard 和 D 控制的发送端。保留线性相位补偿与现有 EQ 设置。
+- English: Fixes approximately 80 ms of unintended delay in minimum-phase Before/Dry and Match bypass paths, affecting B Return, C Mixboard and D-controlled endpoints. Linear-phase compensation and existing EQ settings are retained.
+
+### 1.7.8 — Side/Mid waveforms / Side、Mid 波形
+
+- 中文：修复 Side 已无声却仍显示波形的问题，并修正反相声道的 Mid 波形；覆盖 B/C/D、停止后的监听切换及 WaveScope。
+- English: Fixes false Side waveforms for identical channels and false Mid waveforms for opposite-polarity channels across B/C/D, including stopped monitoring changes and WaveScope.
+
+
+
+## 1.6.2 → 1.7.7 历史更新 / Historical changes since 1.6.2
 
 以下列出这段时间实际开发过的全部版本。部分中间版本只用于测试，其改进和后续修正已合并到 1.7.7。
 
