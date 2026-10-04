@@ -1,6 +1,6 @@
-# 插件护士 - QQ ChainScope 1.7.14
+# 插件护士 - QQ ChainScope 1.7.15
 
-**Qing Audio · 1.7.14 Stable · 2026-09-30**
+**Qing Audio · 1.7.15 Stable · 2026-10-05**
 
 QQ ChainScope 帮你在工程里比较处理前后的声音、匹配音量与音色，并按比例混合不同处理。同轨可以比较原始声音与最多四套效果器方案；多轨可以用 B Return 管两轨，或用 D Mixboard 控制最多六个分轨。
 
@@ -12,16 +12,16 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 ## 最新版本与下载 / Latest Release and Downloads
 
-**[QQ ChainScope 1.7.14 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.14)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+**[QQ ChainScope 1.7.15 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.15)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ-ChainScope-1.7.14-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.14/QQ-ChainScope-1.7.14-Installation-Guide-Chinese.txt)
-- [QQ-ChainScope-1.7.14-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.14/QQ-ChainScope-1.7.14-Installation-Guide-English.txt)
-- [QQ-ChainScope-1.7.14-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.14/QQ-ChainScope-1.7.14-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.7.14-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.14/QQ-ChainScope-1.7.14-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.7.14-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.14/QQ-ChainScope-1.7.14-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.7.14-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.14/QQ-ChainScope-1.7.14-macOS-Universal-2-AU.zip)
-- [QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.14/QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf)
-- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.14/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
+- [QQ-ChainScope-1.7.15-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.15/QQ-ChainScope-1.7.15-Installation-Guide-Chinese.txt)
+- [QQ-ChainScope-1.7.15-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.15/QQ-ChainScope-1.7.15-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.7.15-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.15/QQ-ChainScope-1.7.15-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.7.15-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.15/QQ-ChainScope-1.7.15-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.7.15-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.15/QQ-ChainScope-1.7.15-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.7.15-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.15/QQ-ChainScope-1.7.15-macOS-Universal-2-AU.zip)
+- [QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.15/QQ-ChainScope-User-Manual-Chinese-v1.7.7.pdf)
+- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.15/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
 
 Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
 
@@ -107,9 +107,16 @@ Classic, SSL, Light, and Dark share the same functions. A Send: **UI STYLE** on 
 两份手册各 48 页：先讲 12 项用途，再讲单轨、B 两轨和 D 多轨；以前的重要提示与说明保留。/ Both manuals have 48 pages: twelve uses, single-track operation, B two-track mode, and D multi-track mode, retaining important earlier guidance.
 
 
-本包沿用已确认的 1.7.7 版中英文手册，各 48 页；操作步骤同样适用于 1.7.9。本次修复见下方版本记录。
+本包沿用已确认的 1.7.7 版中英文手册，各 48 页；操作步骤同样适用于 1.7.15。本次修复见下方版本记录。
 
-The approved 48-page 1.7.7 manuals are included unchanged. Their operating instructions also apply to 1.7.14; later fixes are listed below.
+The approved 48-page 1.7.7 manuals are included unchanged. Their operating instructions also apply to 1.7.15; later fixes are listed below.
+
+## 1.7.14 → 1.7.15 更新 / Changes since 1.7.14
+
+### 1.7.15 — Stable — 2026-10-05
+
+- 中文：修复拖动旋钮、推子、百分比、混合比例和频率数值时按下或松开 Shift 导致的参数回跳。切换 Shift 时从当前值继续调整，普通拖动和精细调整的速度保持原样。A/B/C/D 四件套请一起更新。
+- English: Fixes parameter jumps when pressing or releasing Shift during knob, fader, percentage, mix-weight and frequency drags. Adjustment continues from the current value when Shift changes; normal and fine sensitivities are retained. Update all four A/B/C/D plug-ins together.
 
 ## 1.7.13 → 1.7.14 更新 / Changes since 1.7.13
 
