@@ -14,14 +14,14 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 **[QQ ChainScope 1.7.16 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.16)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ-ChainScope-1.7.16-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/untagged-ffb72bb9ea6cb5b5385d/QQ-ChainScope-1.7.16-Installation-Guide-Chinese.txt)
-- [QQ-ChainScope-1.7.16-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/untagged-ffb72bb9ea6cb5b5385d/QQ-ChainScope-1.7.16-Installation-Guide-English.txt)
-- [QQ-ChainScope-1.7.16-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/untagged-ffb72bb9ea6cb5b5385d/QQ-ChainScope-1.7.16-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.7.16-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/untagged-ffb72bb9ea6cb5b5385d/QQ-ChainScope-1.7.16-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.7.16-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/untagged-ffb72bb9ea6cb5b5385d/QQ-ChainScope-1.7.16-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.7.16-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/untagged-ffb72bb9ea6cb5b5385d/QQ-ChainScope-1.7.16-macOS-Universal-2-AU.zip)
-- [QQ ChainScope 用户手册（中文版）v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/untagged-ffb72bb9ea6cb5b5385d/QQ.ChainScope.v1.7.7.pdf)
-- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/untagged-ffb72bb9ea6cb5b5385d/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
+- [QQ-ChainScope-1.7.16-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-Installation-Guide-Chinese.txt)
+- [QQ-ChainScope-1.7.16-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.7.16-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.7.16-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.7.16-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.7.16-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-macOS-Universal-2-AU.zip)
+- [QQ ChainScope 用户手册（中文版）v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ.ChainScope.v1.7.7.pdf)
+- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
 
 Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
 
