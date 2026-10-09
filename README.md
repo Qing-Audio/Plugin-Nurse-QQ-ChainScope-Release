@@ -1,6 +1,6 @@
-# 插件护士 - QQ ChainScope 1.7.16
+# 插件护士 - QQ ChainScope 1.7.22
 
-**Qing Audio · 1.7.16 Stable · 2026-10-06**
+**Qing Audio · 1.7.22 Stable · 2026-10-09**
 
 QQ ChainScope 帮你在工程里比较处理前后的声音、匹配音量与音色，并按比例混合不同处理。同轨可以比较原始声音与最多四套效果器方案；多轨可以用 B Return 管两轨，或用 D Mixboard 控制最多六个分轨。
 
@@ -12,16 +12,16 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 ## 最新版本与下载 / Latest Release and Downloads
 
-**[QQ ChainScope 1.7.16 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.16)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+**[QQ ChainScope 1.7.22 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.22)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ-ChainScope-1.7.16-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-Installation-Guide-Chinese.txt)
-- [QQ-ChainScope-1.7.16-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-Installation-Guide-English.txt)
-- [QQ-ChainScope-1.7.16-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.7.16-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.7.16-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.7.16-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-1.7.16-macOS-Universal-2-AU.zip)
-- [QQ ChainScope 用户手册（中文版）v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ.ChainScope.v1.7.7.pdf)
-- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.16/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
+- [QQ-ChainScope-1.7.22-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Installation-Guide-Chinese.txt)
+- [QQ-ChainScope-1.7.22-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.7.22-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.7.22-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.7.22-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.7.22-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-macOS-Universal-2-AU.zip)
+- [QQ ChainScope 用户手册（中文版）v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ.ChainScope.v1.7.7.pdf)
+- [QQ-ChainScope-User-Manual-English-v1.7.7.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-User-Manual-English-v1.7.7.pdf)
 
 Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
 
@@ -107,9 +107,35 @@ Classic, SSL, Light, and Dark share the same functions. A Send: **UI STYLE** on 
 两份手册各 48 页：先讲 12 项用途，再讲单轨、B 两轨和 D 多轨；以前的重要提示与说明保留。/ Both manuals have 48 pages: twelve uses, single-track operation, B two-track mode, and D multi-track mode, retaining important earlier guidance.
 
 
-本包沿用已确认的 1.7.7 版中英文手册，各 48 页；操作步骤同样适用于 1.7.16。本次 Amount 范围变化见下方版本记录及安装说明。
+本包沿用已确认的 1.7.7 版中英文手册，各 48 页；操作步骤同样适用于 1.7.22。本次 macOS Group、多轨测量与起播修复见下方版本记录及安装说明。
 
-The approved 48-page 1.7.7 manuals are included unchanged. Their operating instructions also apply to 1.7.16; the new Amount range is explained below and in the installation guides.
+The approved 48-page 1.7.7 manuals are included unchanged. Their operating instructions also apply to 1.7.22; the macOS Group, cross-track analysis and playback-start fixes are described below and in the installation guides.
+
+## 1.7.16 → 1.7.22 更新 / Changes since 1.7.16
+
+### 1.7.17
+- 中文：修复 macOS 多个插件实例之间的 Group 与多轨控制信息共享；AU 缺少轨道标识时允许手动选择全部 Group。
+- English: Fixes shared Group and remote-control discovery across macOS instances. AU permits manual selection of all Groups when track identity is unavailable.
+
+### 1.7.18
+- 中文：补齐 AU 的工程采样位置，让跨轨 Before 测量、波形和 EQ Match 取得参考信号。
+- English: Supplies the AU project-sample clock for cross-track Before analysis, waveform and EQ Match reference capture.
+
+### 1.7.19
+- 中文：修复 AU 停止播放后 Before 电平的更新状态，保留峰值保持与分析历史。
+- English: Fixes AU Before meter freshness after playback stops while retaining peak holds and analysis history.
+
+### 1.7.20
+- 中文：修复重新打开工程后已开启的 Multi Track 没有重新注册的问题，无需手动关闭再打开按钮。
+- English: Restores saved Multi Track endpoint registration when reopening a project, without requiring a manual toggle.
+
+### 1.7.21
+- 中文：修复 AU 起播时短暂漏出 Send 原声的问题，并及时同步停止播放时修改的 QQ Bypass 状态；起播淡入的进一步修复见 1.7.22。
+- English: Addresses the brief AU Send burst at playback start and promptly publishes stopped QQ Bypass changes. Further startup fade handling follows in 1.7.22.
+
+### 1.7.22 — Stable
+- 中文：修复 AU 与 Windows VST3 起播时的短暂淡入。宿主暂停处理、重新播放时立即使用当前音量比例；播放中的 Bypass crossfade 保留，不增加音频延迟。
+- English: Fixes playback-start fades in AU and Windows VST3. Current remote gains apply immediately after processing suspension or playback restart. Existing live Bypass crossfades remain intact, with no added audio latency.
 
 ## 1.7.15 → 1.7.16 更新 / Changes since 1.7.15
 
