@@ -14,7 +14,7 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 **[QQ ChainScope 1.7.22 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.22)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ-ChainScope-1.7.22-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Installation-Guide-Chinese.txt)
+- [QQ ChainScope 1.7.22 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ.ChainScope.1.7.22.txt)
 - [QQ-ChainScope-1.7.22-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Installation-Guide-English.txt)
 - [QQ-ChainScope-1.7.22-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Windows-x64-VST3.zip)
 - [QQ-ChainScope-1.7.22-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-macOS-Apple-Silicon-VST3.zip)

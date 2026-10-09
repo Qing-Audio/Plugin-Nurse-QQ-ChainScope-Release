@@ -44,7 +44,7 @@ The original 1.7.7 Chinese and English manuals and Classic, SSL, Light and Dark 
 
 Eight files: four platform ZIPs, two installation guides and two manuals. Product source remains private. GitHub's automatic Source code ZIP contains only this public documentation repository.
 
-- [QQ-ChainScope-1.7.22-Installation-Guide-Chinese.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Installation-Guide-Chinese.txt)
+- [QQ ChainScope 1.7.22 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ.ChainScope.1.7.22.txt)
 - [QQ-ChainScope-1.7.22-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Installation-Guide-English.txt)
 - [QQ-ChainScope-1.7.22-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-Windows-x64-VST3.zip)
 - [QQ-ChainScope-1.7.22-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.22/QQ-ChainScope-1.7.22-macOS-Apple-Silicon-VST3.zip)
