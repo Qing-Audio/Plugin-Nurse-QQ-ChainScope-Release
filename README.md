@@ -1,6 +1,6 @@
-# 插件护士 - QQ ChainScope 1.7.24
+# 插件护士 - QQ ChainScope 1.7.25
 
-**Qing Audio · 1.7.24 Stable · 2026-10-11**
+**Qing Audio · 1.7.25 Stable · 2026-10-12**
 
 QQ ChainScope 帮你在工程里比较处理前后的声音、匹配音量与音色，并按比例混合不同处理。同轨可以比较原始声音与最多四套效果器方案；多轨可以用 B Return 管两轨，或用 D Mixboard 控制最多六个分轨。
 
@@ -12,16 +12,16 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 ## 最新版本与下载 / Latest Release and Downloads
 
-**[QQ ChainScope 1.7.24 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.24)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+**[QQ ChainScope 1.7.25 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.25)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ ChainScope 1.7.24 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.24/QQ.ChainScope.1.7.24.txt)
-- [QQ-ChainScope-1.7.24-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.24/QQ-ChainScope-1.7.24-Installation-Guide-English.txt)
-- [QQ-ChainScope-1.7.24-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.24/QQ-ChainScope-1.7.24-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.7.24-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.24/QQ-ChainScope-1.7.24-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.7.24-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.24/QQ-ChainScope-1.7.24-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.7.24-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.24/QQ-ChainScope-1.7.24-macOS-Universal-2-AU.zip)
-- [QQ ChainScope 用户手册（中文版）v1.7.24.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.24/QQ.ChainScope.v1.7.24.pdf)
-- [QQ-ChainScope-User-Manual-English-v1.7.24.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.24/QQ-ChainScope-User-Manual-English-v1.7.24.pdf)
+- [QQ ChainScope 1.7.25 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ.ChainScope.1.7.25.txt)
+- [QQ-ChainScope-1.7.25-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.7.25-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.7.25-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.7.25-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.7.25-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-macOS-Universal-2-AU.zip)
+- [QQ ChainScope 用户手册（中文版）v1.7.25.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ.ChainScope.v1.7.25.pdf)
+- [QQ-ChainScope-User-Manual-English-v1.7.25.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-User-Manual-English-v1.7.25.pdf)
 
 Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
 
@@ -104,9 +104,19 @@ Classic, SSL, Light, and Dark share the same functions. A Send: **UI STYLE** on 
 - macOS builds are ad-hoc signed and not Apple Developer ID notarized. Follow the included installation guide if quarantine prevents loading.
 - QQ Host cross-process Multi Track remains pending. DAW routing, track identity, and delay compensation can affect cross-track connections and transitions. Put each participating endpoint last in its track's chain, and check a copy of the session after upgrading.
 
-中英文手册均已更新到 1.7.24，各 50 页。Graph、频谱、波形及放大操作有独立章节；播放中计算、SIP、发送与轨道名称来源也有图文说明。原有四种界面截图保留其实际版本标识。
+中英文手册均已更新到 1.7.25，各 51 页。Graph、频谱、波形及放大操作有独立章节；播放中计算、SIP、发送与轨道名称来源也有图文说明。原有四种界面截图保留其实际版本标识。
 
-Both manuals are updated to 1.7.24, with 50 pages each. A dedicated chapter covers Graph, spectrum, waveform and the expand button, with illustrated guidance for live calculations, SIP, sending and track names. Existing UI-style screenshots keep their original version labels.
+Both manuals are updated to 1.7.25, with 51 pages each. A dedicated chapter covers Graph, spectrum, waveform and the expand button, with illustrated guidance for live calculations, SIP, sending and track names. Existing UI-style screenshots keep their original version labels.
+
+第 25 页新增 ECO/FULL 与中文悬停说明，配有 B/C/D 按钮截图。
+
+Page 25 adds illustrated instructions for global/local ECO/FULL and Chinese hover help.
+
+## 1.7.24 → 1.7.25 更新 / Changes since 1.7.24
+
+### 1.7.25 — Stable
+- 中文：设置中的 FULL / ECO 一起调整同一宿主进程里已经插入的 B Return、C Mixboard 和 D Mixboard，关闭窗口的插件也会跟随；后来新插入的插件仍默认 FULL，保存的工程保留各插件自己的模式。B/C/D 齿轮左侧新增单个插件的 ECO/FULL 按钮，并跟随全局调整。按钮、旋钮、菜单和数值框增加中文悬停说明。中英文手册各 51 页，新增配图说明。
+- English: Settings FULL / ECO now updates existing B Return, C Mixboard and D Mixboard instances in the same host process, including closed editors. New inserts still start in FULL; saved projects retain each instance's mode. A local ECO/FULL button sits immediately left of the gear in B/C/D and follows global changes. Buttons, knobs, menus and value fields gain Chinese hover help. Both manuals have 51 pages, with a new illustrated guide.
 
 ## 1.7.22 → 1.7.24 更新 / Changes since 1.7.22
 
