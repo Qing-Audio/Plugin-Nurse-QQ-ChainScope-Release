@@ -1,6 +1,6 @@
-# 插件护士 - QQ ChainScope 1.7.25
+# 插件护士 - QQ ChainScope 1.8.0
 
-**Qing Audio · 1.7.25 Stable · 2026-10-12**
+**Qing Audio · 1.8.0 · 2026-10-14**
 
 QQ ChainScope 帮你在工程里比较处理前后的声音、匹配音量与音色，并按比例混合不同处理。同轨可以比较原始声音与最多四套效果器方案；多轨可以用 B Return 管两轨，或用 D Mixboard 控制最多六个分轨。
 
@@ -12,16 +12,16 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 ## 最新版本与下载 / Latest Release and Downloads
 
-**[QQ ChainScope 1.7.25 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.7.25)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+**[QQ ChainScope 1.8.0 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.0)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ ChainScope 1.7.25 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ.ChainScope.1.7.25.txt)
-- [QQ-ChainScope-1.7.25-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-Installation-Guide-English.txt)
-- [QQ-ChainScope-1.7.25-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.7.25-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.7.25-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.7.25-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-1.7.25-macOS-Universal-2-AU.zip)
-- [QQ ChainScope 用户手册（中文版）v1.7.25.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ.ChainScope.v1.7.25.pdf)
-- [QQ-ChainScope-User-Manual-English-v1.7.25.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.7.25/QQ-ChainScope-User-Manual-English-v1.7.25.pdf)
+- [QQ ChainScope 1.8.0 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ.ChainScope.1.8.0.txt)
+- [QQ-ChainScope-1.8.0-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.8.0-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.8.0-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.8.0-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.8.0-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-macOS-Universal-2-AU.zip)
+- [QQ ChainScope 用户手册（中文版）v1.8.0.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ.ChainScope.v1.8.0.pdf)
+- [QQ-ChainScope-User-Manual-English-v1.8.0.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-User-Manual-English-v1.8.0.pdf)
 
 Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
 
@@ -104,13 +104,39 @@ Classic, SSL, Light, and Dark share the same functions. A Send: **UI STYLE** on 
 - macOS builds are ad-hoc signed and not Apple Developer ID notarized. Follow the included installation guide if quarantine prevents loading.
 - QQ Host cross-process Multi Track remains pending. DAW routing, track identity, and delay compensation can affect cross-track connections and transitions. Put each participating endpoint last in its track's chain, and check a copy of the session after upgrading.
 
-中英文手册均已更新到 1.7.25，各 51 页。Graph、频谱、波形及放大操作有独立章节；播放中计算、SIP、发送与轨道名称来源也有图文说明。原有四种界面截图保留其实际版本标识。
+中英文手册均已更新到 1.8.0，各 54 页。Graph、频谱、波形及放大操作有独立章节；播放中计算、SIP、发送与轨道名称来源也有图文说明。原有四种界面截图保留其实际版本标识。
 
-Both manuals are updated to 1.7.25, with 51 pages each. A dedicated chapter covers Graph, spectrum, waveform and the expand button, with illustrated guidance for live calculations, SIP, sending and track names. Existing UI-style screenshots keep their original version labels.
+Both manuals are updated to 1.8.0, with 54 pages each. A dedicated chapter covers Graph, spectrum, waveform and the expand button, with illustrated guidance for live calculations, SIP, sending and track names. Existing UI-style screenshots keep their original version labels.
 
-第 25 页新增 ECO/FULL 与中文悬停说明，配有 B/C/D 按钮截图。
+中英文手册各 54 页，已同步高精度 TP、图表差值、SOURCE LEVELS 与全局/局部 ECO/FULL 的说明。
 
-Page 25 adds illustrated instructions for global/local ECO/FULL and Chinese hover help.
+Both 54-page manuals cover improved TP precision, named graph differences, SOURCE LEVELS and global/local ECO/FULL.
+
+## 1.7.25 → 1.8.0 更新 / Changes since 1.7.25
+
+### 1.7.26
+- 中文：C/D 新增按来源名称、颜色和位置对应的 TP、综合响度与 RMS。FULL/ECO 都从播放起点持续累计 MIX，停止后保持，模式切换不清零。
+- English: C/D add source TP, integrated loudness and RMS readings matching source names, colors and positions. FULL/ECO continuously accumulate MIX from Play and retain it through Stop and mode changes.
+
+### 1.7.27
+- 中文：COMPARE 数值区移到来源按钮与 Monitor 之间；MIX 卡片直接显示数值，列顺序统一为 I / RMS / TP。MIX 页移除重复卡片；设置页隐藏顶部局部模式按钮及 B 的 NOTE。
+- English: COMPARE readings move between source selection and Monitor; MIX readings are visible with I / RMS / TP column order. MIX removes duplicate cards; Settings hides the local mode button and B NOTE.
+
+### 1.7.28
+- 中文：C 只显示实际 Return，D 只显示可用的已连接 Group；试听、比例与数值区紧凑排列，名称、颜色和真实连接关系保持一致。
+- English: C shows existing Returns and D shows connected available Groups. Listening, proportions and reading cards use compact matching names, colors and connections.
+
+### 1.7.29
+- 中文：设置中的全局 ECO/FULL 显示最近的全局选择，与当前单个插件的模式分开。点击全局会更新所有现有 B/C/D，单个调整不改全局显示。中英文手册补充数值、动态来源与全局/局部模式示例。
+- English: Settings shows the last global ECO/FULL choice separately from the local instance mode. Global clicks update all existing B/C/D; local changes leave the global display unchanged. Bilingual manuals add source readings, dynamic-source and global/local examples.
+
+### 1.7.30
+- 中文：B/C/D 波形悬停改为一行带名称和相减顺序的差值；频谱使用“平均差／峰值差”，保留频率及两路名称。
+- English: B/C/D waveform hover uses one named subtraction. Spectrum uses readable Chinese average/peak difference labels, retaining frequency and both source names.
+
+### 1.8.0
+- 中文：提高 True Peak 检测精度；响度、RMS、声音处理、停止保持及重置规则保持不变。中英文手册同步到 1.8.0，补充 TP 及图表差值说明。
+- English: Improves True Peak detection precision while preserving loudness, RMS, audio processing, Stop hold and Reset behavior. Both manuals are updated to 1.8.0 with TP and graph-difference guidance.
 
 ## 1.7.24 → 1.7.25 更新 / Changes since 1.7.24
 
