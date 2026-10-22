@@ -1,6 +1,6 @@
-# 插件护士 - QQ ChainScope 1.8.0
+# 插件护士 - QQ ChainScope 1.8.1 Stable
 
-**Qing Audio · 1.8.0 · 2026-10-14**
+**Qing Audio · 1.8.1 Stable · 2026-10-22**
 
 QQ ChainScope 帮你在工程里比较处理前后的声音、匹配音量与音色，并按比例混合不同处理。同轨可以比较原始声音与最多四套效果器方案；多轨可以用 B Return 管两轨，或用 D Mixboard 控制最多六个分轨。
 
@@ -12,16 +12,16 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 ## 最新版本与下载 / Latest Release and Downloads
 
-**[QQ ChainScope 1.8.0 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.0)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+**[QQ ChainScope 1.8.1 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.1)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ ChainScope 1.8.0 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ.ChainScope.1.8.0.txt)
-- [QQ-ChainScope-1.8.0-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-Installation-Guide-English.txt)
-- [QQ-ChainScope-1.8.0-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.8.0-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.8.0-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.8.0-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-1.8.0-macOS-Universal-2-AU.zip)
-- [QQ ChainScope 用户手册（中文版）v1.8.0.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ.ChainScope.v1.8.0.pdf)
-- [QQ-ChainScope-User-Manual-English-v1.8.0.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.0/QQ-ChainScope-User-Manual-English-v1.8.0.pdf)
+- [QQ ChainScope 1.8.1 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ.ChainScope.1.8.1.txt)
+- [QQ-ChainScope-1.8.1-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.8.1-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.8.1-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.8.1-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.8.1-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-macOS-Universal-2-AU.zip)
+- [QQ ChainScope 用户手册（中文版）v1.8.0.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ.ChainScope.v1.8.0.pdf)
+- [QQ-ChainScope-User-Manual-English-v1.8.0.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-User-Manual-English-v1.8.0.pdf)
 
 Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
 
@@ -111,6 +111,13 @@ Both manuals are updated to 1.8.0, with 54 pages each. A dedicated chapter cover
 中英文手册各 54 页，已同步高精度 TP、图表差值、SOURCE LEVELS 与全局/局部 ECO/FULL 的说明。
 
 Both 54-page manuals cover improved TP precision, named graph differences, SOURCE LEVELS and global/local ECO/FULL.
+
+## 1.8.0 → 1.8.1 更新 / Changes since 1.8.0
+
+### 1.8.1
+- 中文：配合 QQ Host 1.3.6 的多段处理，使用音频块标记和采样位置配对 Original、Return 与混合音频，保留插件延迟对齐。完整且位于同一 QQ Host 的 A/B/C 组可以参与分段；旧版、不完整、跨 Host 及 D 组继续保留分段保护。现有界面、DSP、测量、预置和说明书保持不变。A/B/C/D 四个模块必须一起升级。
+- English: Adds audio-block and sample-position matching for Original, Returns and mixed audio under QQ Host 1.3.6 multistage processing, retaining declared-latency alignment. Complete A/B/C groups contained within one QQ Host can use multiple stages. Older, incomplete, cross-Host and D groups keep pipeline protection. Existing UI, DSP, metering, presets and manuals are retained. Upgrade all four A/B/C/D modules together.
+
 
 ## 1.7.25 → 1.8.0 更新 / Changes since 1.7.25
 
