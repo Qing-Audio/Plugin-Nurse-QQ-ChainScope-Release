@@ -1,6 +1,6 @@
-# 插件护士 - QQ ChainScope 1.8.1 Stable
+# 插件护士 - QQ ChainScope 1.8.17 Stable
 
-**Qing Audio · 1.8.1 Stable · 2026-10-22**
+**Qing Audio · 1.8.17 Stable · 2026-10-24**
 
 QQ ChainScope 帮你在工程里比较处理前后的声音、匹配音量与音色，并按比例混合不同处理。同轨可以比较原始声音与最多四套效果器方案；多轨可以用 B Return 管两轨，或用 D Mixboard 控制最多六个分轨。
 
@@ -12,16 +12,16 @@ This is proprietary Qing Audio software. Source remains private; this public rep
 
 ## 最新版本与下载 / Latest Release and Downloads
 
-**[QQ ChainScope 1.8.1 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.1)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
+**[QQ ChainScope 1.8.17 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.17)** · [历史版本 / All releases](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases)
 
-- [QQ ChainScope 1.8.1 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ.ChainScope.1.8.1.txt)
-- [QQ-ChainScope-1.8.1-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-Installation-Guide-English.txt)
-- [QQ-ChainScope-1.8.1-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.8.1-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.8.1-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.8.1-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-1.8.1-macOS-Universal-2-AU.zip)
-- [QQ ChainScope 用户手册（中文版）v1.8.0.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ.ChainScope.v1.8.0.pdf)
-- [QQ-ChainScope-User-Manual-English-v1.8.0.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.1/QQ-ChainScope-User-Manual-English-v1.8.0.pdf)
+- [QQ ChainScope 1.8.17 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.17/QQ.ChainScope.1.8.17.txt)
+- [QQ-ChainScope-1.8.17-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.17/QQ-ChainScope-1.8.17-Installation-Guide-English.txt)
+- [QQ-ChainScope-1.8.17-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.17/QQ-ChainScope-1.8.17-Windows-x64-VST3.zip)
+- [QQ-ChainScope-1.8.17-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.17/QQ-ChainScope-1.8.17-macOS-Apple-Silicon-VST3.zip)
+- [QQ-ChainScope-1.8.17-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.17/QQ-ChainScope-1.8.17-macOS-Intel-x86_64-VST3.zip)
+- [QQ-ChainScope-1.8.17-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.17/QQ-ChainScope-1.8.17-macOS-Universal-2-AU.zip)
+- [QQ ChainScope 用户手册（中文版）v1.8.17.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.17/QQ.ChainScope.v1.8.17.pdf)
+- [QQ ChainScope User Manual English v1.8.17.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.17/QQ.ChainScope.User.Manual.English.v1.8.17.pdf)
 
 Windows 使用 x64 VST3。macOS 原生 Apple Silicon 宿主选 arm64，Intel 或 Rosetta 宿主选 x86_64，两套 VST3 只装一套；AU 是独立格式，Universal 2 包含两种架构。所有平台包均包含 A/B/C/D 四件套，请一起升级。
 
@@ -111,6 +111,98 @@ Both manuals are updated to 1.8.0, with 54 pages each. A dedicated chapter cover
 中英文手册各 54 页，已同步高精度 TP、图表差值、SOURCE LEVELS 与全局/局部 ECO/FULL 的说明。
 
 Both 54-page manuals cover improved TP precision, named graph differences, SOURCE LEVELS and global/local ECO/FULL.
+
+## OVERLAY 与 MASKING / OVERLAY and MASKING
+
+C/D 的 OVERLAY 以 dB 调整各路并分别显示图表，与 MIX 共用音量。眼睛控制显示及 Link 范围；MIX/OVERLAY 右键音量块独立静音。MASKING 默认关闭，SENS 默认 20、REF SPL 默认 75，提供频率和时间阴影。它仍是试验性听辨辅助，不会自动改动声音。
+
+C/D OVERLAY uses dB gains and separate source graphs, sharing gains with MIX. Eyes select display and Link participation; right-click gain blocks for independent MIX/OVERLAY mute. MASKING is off by default, with SENS 20 and REF SPL 75. Its frequency/time shading is experimental listening assistance and does not change audio automatically.
+
+中英文手册均已同步至 1.8.17，各 62 页，包含 OVERLAY、Link、静音和 MASKING 参数图解。
+
+Both manuals are updated to v1.8.17, with 62 pages each and illustrated OVERLAY, Link, mute and MASKING guidance.
+
+## 1.8.1 → 1.8.17 更新 / Changes since 1.8.1
+
+### 1.8.17
+
+- 中文：修复播放中跳转位置后 C/D 的 COMPARE、OVERLAY 频谱保留旧曲线、后续更新停滞的问题。保留既有音频处理、测量算法与累计规则。
+- English: Fixes stalled COMPARE/OVERLAY spectrum updates after playback seeks in C/D Mixboard. Audio processing, meter algorithms and accumulation rules are preserved.
+
+### 1.8.16
+
+- 中文：MASKING 的 SENS 默认值调整为 20，Alt 恢复 20；已保存的实例数值不被覆盖。中文手册补充 SENS、REF SPL、多轨选择和阴影示例。
+- English: Sets the default MASKING SENS to 20, including Alt reset, without overwriting saved instance values. Adds Chinese manual examples for SENS, REF SPL, source selection and shading.
+
+### 1.8.15
+
+- 中文：ECO 下展开 Graph 时同时维护 COMPARE、OVERLAY、MIX 图表，修复来回切换后频谱消失。收起 Graph 或关窗后仍按 ECO 规则节省分析。此版将 SENS 默认值设为 30，后续 1.8.16 改为 20。
+- English: Keeps all three graph modes ready while Graph is open in ECO, fixing missing spectra after mode changes. Collapsing Graph or closing the window retains ECO savings. This version used SENS 30; 1.8.16 supersedes it with 20.
+
+### 1.8.14
+
+- 中文：降低图表快照与历史重建对线程栈的占用，修复在 QQ Host 较小线程栈下可能导致断线的路径，保留图表与音频功能。
+- English: Reduces stack use in graph snapshots and history projection, addressing a disconnect path on QQ Host threads with smaller stacks while preserving audio and graph behavior.
+
+### 1.8.13
+
+- 中文：为 C/D 的 OVERLAY 增加独立 SENS 灵敏度参数、保存和精细调整。此版默认 50，后续版本继续调整默认值。
+- English: Adds a saved, finely adjustable SENS control to C/D OVERLAY. The initial default was 50; later versions refine that default.
+
+### 1.8.12
+
+- 中文：进一步收紧 MASKING 对微弱尾部和不显著重叠的判断，减少过多阴影提示。
+- English: Makes MASKING more selective about weak tails and insignificant overlap to reduce excessive shading.
+
+### 1.8.11
+
+- 中文：MASKING 增加渐亮、渐暗和平滑处理，减少闪烁，并继续降低过度敏感的提示。
+- English: Smooths MASKING shading with gradual attack and release, reducing flicker and over-sensitive indications.
+
+### 1.8.10
+
+- 中文：B 的音量、PAN、Dry/Wet 以及 C/D MIX 的音量与静音可重新呈现已记录的图表，停止后也能查看变化；C/D 模式顺序改为 COMPARE、OVERLAY、MIX。
+- English: Updates retained graphs for B gain, PAN and Dry/Wet and C/D MIX gain and mute, including while stopped. Orders C/D mode buttons as COMPARE, OVERLAY, MIX.
+
+### 1.8.9
+
+- 中文：MASKING 改为眼睛点亮来源之间的两两分析，移除参考轨和 AUTO/PAIR 的额外选择。C 增加与 D 一致的 OVERLAY、dB 音量与 Link；右键静音采用更深的黑色。
+- English: Uses pairwise MASKING across sources with lit eyes, removing the extra reference-track and AUTO/PAIR choices. Adds matching OVERLAY, dB gain and Link behavior to C. Muted source blocks use a deeper black.
+
+### 1.8.8
+
+- 中文：减少 MASKING 对很弱成分的误提示，统一频谱与波形的遮蔽可见条件。
+- English: Reduces MASKING indications from very weak components and aligns spectrum and waveform visibility criteria.
+
+### 1.8.7
+
+- 中文：眼睛仅控制图表、数值显示及 Link/Alt 参与范围，不再决定声音是否混合。MIX/OVERLAY 中右键独立静音；COMPARE 右键不静音。解除 D 连接时释放遥控静音。
+- English: Separates eye-controlled display and Link/Alt participation from audio mixing. Adds independent right-click mute in MIX/OVERLAY, with no right-click mute in COMPARE. Disconnecting D releases its remote mute.
+
+### 1.8.6
+
+- 中文：加入首版 MASKING 与 REF SPL、频率和时间阴影；进一步放慢音量调整。MIX Link 保持总百分比，OVERLAY Link 同步增减 dB。无 Before 时仍显示 After，禁用新 EQ Match 计算但保留已有结果。B/D 解除连接时释放隐藏遥控处理，重新连接后按当前控制器状态恢复。
+- English: Introduces MASKING, REF SPL and frequency/time shading, with slower gain adjustment. MIX Link preserves the total percentage; OVERLAY Link applies equal dB changes. After remains available without Before; new EQ Match calculation is disabled but existing results remain. Disconnecting B/D releases hidden remote processing, and reconnection reapplies the current controller state.
+
+### 1.8.5
+
+- 中文：放慢 C/D 音量操作；OVERLAY 的 Alt 恢复 0 dB，MIX 保留平均分配。全局 ECO/FULL 记住用户上次选择，独立于新实例默认 FULL。
+- English: Slows C/D gain controls. Alt resets OVERLAY to 0 dB while MIX retains equal-share reset. The global ECO/FULL choice persists independently of new instances starting in FULL.
+
+### 1.8.4
+
+- 中文：D 的 OVERLAY 使用 dB 显示，与 MIX 百分比互相换算，最大 +12 dB。超过 100% 时颜色填充仍限制在音量块边界。
+- English: Displays D OVERLAY gain in dB, sharing values with MIX percentages up to +12 dB. Fill remains bounded when percentages exceed 100%.
+
+### 1.8.3
+
+- 中文：将 D 的新模式命名为 OVERLAY，修复单路频谱显示并计入音量；保留与 MIX 共用的混合音量和 Link，以及流畅的模式切换。
+- English: Renames the new D mode OVERLAY, fixes per-source spectra with applied gain, and retains shared MIX gains, Link and smooth mode changes.
+
+### 1.8.2
+
+- 中文：为 D 加入首次交付时名为 FULL 的叠加分析模式：共用 MIX 的音量和 Link，分别查看各 Group 的图表与数值，同时显示总 MIX。此名称在 1.8.3 改为 OVERLAY。
+- English: Introduces D's layered analysis mode, initially named FULL, with shared MIX gains and Link, per-Group graphs/readings and the total MIX result. Version 1.8.3 renames it OVERLAY.
 
 ## 1.8.0 → 1.8.1 更新 / Changes since 1.8.0
 
