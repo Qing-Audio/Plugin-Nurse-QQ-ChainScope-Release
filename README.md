@@ -139,10 +139,8 @@ QQ ChainScope is proprietary Qing Audio software and is not open source. Public 
 
 **[QQ ChainScope 1.8.19 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.19)**
 
-- [QQ-ChainScope-1.8.19-Windows-x64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-Windows-x64-VST3.zip)
-- [QQ-ChainScope-1.8.19-macOS-Apple-Silicon-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-macOS-Apple-Silicon-VST3.zip)
-- [QQ-ChainScope-1.8.19-macOS-Intel-x86_64-VST3.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-macOS-Intel-x86_64-VST3.zip)
-- [QQ-ChainScope-1.8.19-macOS-Universal-2-AU.zip](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-macOS-Universal-2-AU.zip)
+- [Windows x64 安装包 / Windows x64 installer (VST3)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-Windows-x64-Setup.exe)
+- [macOS 通用安装包 / Universal Mac installer (AU + VST3, Intel & Apple Silicon)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-macOS-Universal-Setup.pkg)
 - [QQ ChainScope 1.8.19 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ.ChainScope.1.8.19.txt)
 - [QQ-ChainScope-1.8.19-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-Installation-Guide-English.txt)
 - [QQ ChainScope 用户手册（中文版）v1.8.18.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ.ChainScope.v1.8.18.pdf)
@@ -150,8 +148,8 @@ QQ ChainScope is proprietary Qing Audio software and is not open source. Public 
 
 - 中文：各平台包均含 A/B/C/D 四件套，请一起升级到 1.8.19。升级前保存工程副本并关闭音频宿主。原有工程与参数保持兼容。
 - English: Every platform package contains A/B/C/D; upgrade all four to 1.8.19. Save a session copy and close audio hosts before replacement. Existing sessions and parameters remain compatible.
-- 中文：Windows x64 VST3 复用已验证构建；Mac VST3 按宿主选择 Apple Silicon 或 Intel/Rosetta，两套只装一套；AU 使用 Universal 2。Mac 采用 ad-hoc 签名，未经过 Apple Developer ID 公证。
-- English: The verified Windows x64 VST3 build is reused. Choose Apple Silicon or Intel/Rosetta VST3 for the Mac host and install only one; AU uses Universal 2. Mac products use ad-hoc signatures without Apple Developer ID notarization.
+- Windows 安装包包含四个 x64 VST3。macOS 安装包同时安装四个 VST3 和四个 AU，每个插件均支持 Intel 和 Apple Silicon。
+- The Windows installer includes all four x64 VST3 plug-ins. The Mac installer installs all four VST3 and all four AU plug-ins, each native on both Intel and Apple Silicon.
 - 中文：沿用已发布的 v1.8.18 中英文手册，各 62 页，内容与版本标识不变。本次新增 Shift + 滚轮平移及波形右键恢复全览，见下方更新记录和随包安装说明。
 - English: The released 62-page v1.8.18 Chinese and English manuals are included unchanged with their original version labels. See the change history and included guides for Shift + wheel panning and right-click waveform overview reset.
 - 中文：MASKING 仍为试验性辅助分析（SENS 默认 20、REF SPL 默认 75）。自动化构建和插件接口测试不等于所有 DAW、实体控制器及监听条件都已验收。
@@ -159,19 +157,15 @@ QQ ChainScope is proprietary Qing Audio software and is not open source. Public 
 
 ### 安装、升级与兼容性 / Installation, upgrades and compatibility
 
-- Windows 10/11 x64，安装到 `C:\Program Files\Common Files\VST3`。macOS 部署目标为 11.0 或更高；VST3 放到 `~/Library/Audio/Plug-Ins/VST3`，AU 放到 `~/Library/Audio/Plug-Ins/Components`。
+保存工程并完全关闭 DAW。Windows 10/11 x64 用户运行 EXE，四个插件默认安装到 `C:\Program Files\Common Files\VST3`。macOS 11 或更高版本运行 PKG，VST3 安装到 `/Library/Audio/Plug-Ins/VST3`，AU 安装到 `/Library/Audio/Plug-Ins/Components`。安装器自动替换已知旧版，完成后请在宿主中重新扫描。
 
-- 关闭 DAW 后更新完整四件套，避免用户目录、系统目录或旧命名下有重复版本，然后重新扫描。D 从 1.7.x 起随四件套提供。
+Save your session and quit all audio hosts. On Windows 10/11 x64, run the EXE to install into `C:\Program Files\Common Files\VST3`. On macOS 11 or later, run the PKG to install into `/Library/Audio/Plug-Ins/VST3` and `/Library/Audio/Plug-Ins/Components`. Both installers replace known older copies. Rescan in your host after installation.
 
-- macOS 成品为 ad-hoc 签名，未经过 Apple Developer ID 公证。需要处理 quarantine 时，按随包安装说明操作。
+Mac 插件使用 ad-hoc 签名，PKG 未经 Apple Developer ID 签名或公证。如系统提示来源未验证，请核对官方下载来源并参阅安装说明。
+
+The Mac plug-ins use ad-hoc signatures. The PKG is unsigned and has not been notarized by Apple. If macOS asks about the developer, verify the download source and follow the installation guide.
 
 - QQ Host 内的跨进程多轨兼容仍待处理。DAW 路由、轨道身份和延迟补偿行为可能影响跨轨连接与切换；插件应处于各参与轨处理链的最后。新装后先用工程副本检查。
-
-- Windows 10/11 x64: `C:\Program Files\Common Files\VST3`. macOS deployment target: 11.0 or later. Use `~/Library/Audio/Plug-Ins/VST3` for VST3 and `~/Library/Audio/Plug-Ins/Components` for AU.
-
-- Quit the DAW, update the complete four-plug-in set, remove duplicate old copies, and rescan. D is included in the four-plug-in set from 1.7.x onward.
-
-- macOS builds are ad-hoc signed and not Apple Developer ID notarized. Follow the included installation guide if quarantine prevents loading.
 
 - QQ Host cross-process Multi Track remains pending. DAW routing, track identity, and delay compensation can affect cross-track connections and transitions. Put each participating endpoint last in its track's chain, and check a copy of the session after upgrading.
 
@@ -183,9 +177,14 @@ Both 62-page v1.8.18 manuals include the 13-item overview while retaining their 
 
 Both 54-page manuals cover improved TP precision, named graph differences, SOURCE LEVELS and global/local ECO/FULL.
 
+
 ## 4. 逐版本更新记录 / Version history
 
 ### 1.8.19 — 频谱显示与波形导航 / Spectrum display and waveform navigation
+
+2026-11-22 · 安装方式更新。Windows 提供 VST3 安装器，macOS 提供 Intel 与 Apple Silicon 共用的 AU + VST3 安装器。两者均自动更新已知旧版插件。
+
+Installer update, November 22, 2026. Windows now has a VST3 installer. One Mac installer provides AU and VST3 for Intel and Apple Silicon. Both upgrade known older plug-ins automatically.
 
 - 中文：修复 B Return WET OUT 频谱受到无关 Dry/Wet、ADD 或 MAIN 控制影响的问题；B MAIN OUT 与 C/D MIX 调整音量、混合与静音时，实时曲线继续平滑更新，避免整幅图突然跳动。停止后的历史结果仍即时响应相关控制。
 - English: Fixes B Return WET OUT spectrum invalidation caused by unrelated Dry/Wet, ADD or MAIN controls. Live curves in B MAIN OUT and C/D MIX keep smoothing during gain, blend and mute changes instead of snapping the whole view. Relevant controls still update held results immediately after Stop.
