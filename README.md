@@ -1,6 +1,6 @@
-# 插件护士 / QQ ChainScope 1.8.19 Stable
+# 插件护士 / QQ ChainScope 1.8.26 Stable
 
-**Qing Audio · 2026-11-03**
+**Qing Audio · 2026-11-27**
 
 ## 1. 产品介绍 / About the product
 
@@ -47,11 +47,11 @@ Enable the three-rectangle icon on the final A/B/C in each participating track. 
 
 When the original feeds other tracks, place A Send in a post-fader insert slot and use pre-fader sends so muting Original in Compare keeps those tracks fed. Bypassing D leaves remote settings active; removing D clears its related hidden processing. The included manuals explain the full steps and C/D bypass differences.
 
-### EQ Match
+### EQ Match 与相位校准 / EQ Match and phase correction
 
-Wet 与 Main Out（Dry/Wet 混合后的信号）都能匹配到 Before，分别保存设置。B/C/D 提供线性相位开关、Amount、Smooth 与匹配后可拖动的频率范围。切换相位模式时，DAW 更新延迟补偿可能造成短暂断音。
+B Return 在 WET OUT 和 MAIN OUT 分别保存各自的 EQ 曲线与 MATCH 开关。CALC 从 Before 和处理后的原始 Wet 学习相位，PHASE 应用校准并保留听者选定的 Wet 整体极性。打开 PHASE 时，已开启的 Wet 和 Main EQ 使用线性相位；关闭后，两处开启的 EQ 都回到普通最小相位。先学 EQ 或先学 PHASE 均可。C/D Mixboard 在 MIX 中各自保留 LINEAR PHASE 开关。
 
-Wet and Main Out (the Dry/Wet blend) can both match Before and keep separate settings. B/C/D offer a phase-mode switch, Amount, Smooth, and frequency boundaries adjustable after matching. Changing phase mode may briefly interrupt audio while the DAW updates compensation.
+B Return stores separate EQ curves and MATCH switches in WET OUT and MAIN OUT. Phase CALC learns from Before and the uncorrected Wet signal. PHASE applies the correction while preserving your chosen Wet polarity. Enabled EQ stages use linear phase with PHASE on and standard minimum phase with it off. You can learn EQ and PHASE in either order. C and D Mixboard each retain a LINEAR PHASE switch in MIX.
 
 ### 四种界面 / Four UI styles
 
@@ -81,9 +81,9 @@ C/D 的 OVERLAY 以 dB 调整各路并分别显示图表，与 MIX 共用音量�
 
 C/D OVERLAY uses dB gains and separate source graphs, sharing gains with MIX. Eyes select display and Link participation; right-click gain blocks for independent MIX/OVERLAY mute. MASKING is off by default, with SENS 20 and REF SPL 75. Its frequency/time shading is experimental listening assistance and does not change audio automatically.
 
-随包沿用 v1.8.18 中英文手册，各 62 页，包含 OVERLAY、Link、静音和 MASKING 参数图解。
+配套中英文手册均为 1.8.26 版，各 67 页。直播测量和冻结见第 17–21 页，B Return 的相位与 EQ 见第 23–29 页，C/D 遮蔽分析见第 37 页起。
 
-The included v1.8.18 manuals retain 62 pages each with illustrated OVERLAY, Link, mute and MASKING guidance.
+Both 1.8.26 manuals have 67 pages. See pages 17–21 for live metering and Freeze, pages 23–29 for B Return phase correction and EQ, and page 37 onwards for masking analysis.
 
 ### FINAL 规则 / FINAL Rules
 
@@ -137,48 +137,64 @@ QQ ChainScope is proprietary Qing Audio software and is not open source. Public 
 
 ## 3. 最新版本下载与说明书 / Latest downloads and manuals
 
-**[QQ ChainScope 1.8.19 Release](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.19)**
+[QQ ChainScope 1.8.26 Stable](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.26)
 
-- [Windows x64 安装包 / Windows x64 installer (VST3)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-Windows-x64-Setup.exe)
-- [macOS 通用安装包 / Universal Mac installer (AU + VST3, Intel & Apple Silicon)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-macOS-Universal-Setup.pkg)
-- [QQ ChainScope 1.8.19 安装说明（中文版）.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ.ChainScope.1.8.19.txt)
-- [QQ-ChainScope-1.8.19-Installation-Guide-English.txt](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ-ChainScope-1.8.19-Installation-Guide-English.txt)
-- [QQ ChainScope 用户手册（中文版）v1.8.18.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ.ChainScope.v1.8.18.pdf)
-- [QQ ChainScope User Manual English v1.8.18.pdf](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.19/QQ.ChainScope.User.Manual.English.v1.8.18.pdf)
+- [Windows x64 安装包 · VST3 / Windows x64 installer](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-Windows-x64-Setup.exe)
+- [macOS 通用安装包 · AU + VST3 / Mac installer for Intel and Apple Silicon](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-macOS-Universal-Setup.pkg)
+- [安装说明（中文版）](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-Installation-Guide-Chinese.txt)
+- [Installation Guide (English)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-Installation-Guide-English.txt)
+- [用户手册（中文版，67 页）](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-User-Manual-Chinese.pdf)
+- [User Manual (English, 67 pages)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-User-Manual-English.pdf)
 
-- 中文：各平台包均含 A/B/C/D 四件套，请一起升级到 1.8.19。升级前保存工程副本并关闭音频宿主。原有工程与参数保持兼容。
-- English: Every platform package contains A/B/C/D; upgrade all four to 1.8.19. Save a session copy and close audio hosts before replacement. Existing sessions and parameters remain compatible.
-- Windows 安装包包含四个 x64 VST3。macOS 安装包同时安装四个 VST3 和四个 AU，每个插件均支持 Intel 和 Apple Silicon。
-- The Windows installer includes all four x64 VST3 plug-ins. The Mac installer installs all four VST3 and all four AU plug-ins, each native on both Intel and Apple Silicon.
-- 中文：沿用已发布的 v1.8.18 中英文手册，各 62 页，内容与版本标识不变。本次新增 Shift + 滚轮平移及波形右键恢复全览，见下方更新记录和随包安装说明。
-- English: The released 62-page v1.8.18 Chinese and English manuals are included unchanged with their original version labels. See the change history and included guides for Shift + wheel panning and right-click waveform overview reset.
-- 中文：MASKING 仍为试验性辅助分析（SENS 默认 20、REF SPL 默认 75）。自动化构建和插件接口测试不等于所有 DAW、实体控制器及监听条件都已验收。
-- English: MASKING remains experimental visual assistance (SENS 20 and REF SPL 75 by default). Automated build and plug-in interface tests do not certify every DAW, physical controller or listening setup.
+升级或重装前请保存工程，退出音频宿主。Windows 10/11 x64 运行 EXE，安装到 `C:\Program Files\Common Files\VST3`。macOS 11 及以上运行 PKG，安装到 `/Library/Audio/Plug-Ins/VST3` 和 `/Library/Audio/Plug-Ins/Components`。安装器自动清理默认目录中本产品的旧版，再安装 A/B/C/D 四件套。工程、预设和个人设置保留。重新打开宿主扫描插件，确认四个组件均为 1.8.26。
 
-### 安装、升级与兼容性 / Installation, upgrades and compatibility
+Save your session and quit audio hosts before upgrading or reinstalling. Run the EXE on Windows 10/11 x64 or the universal PKG on macOS 11 or later. Setup replaces known older ChainScope plug-ins in the standard directories and installs all four components. Projects, presets and settings are retained. Reopen your host, rescan and check that A/B/C/D all report 1.8.26.
 
-保存工程并完全关闭 DAW。Windows 10/11 x64 用户运行 EXE，四个插件默认安装到 `C:\Program Files\Common Files\VST3`。macOS 11 或更高版本运行 PKG，VST3 安装到 `/Library/Audio/Plug-Ins/VST3`，AU 安装到 `/Library/Audio/Plug-Ins/Components`。安装器自动替换已知旧版，完成后请在宿主中重新扫描。
+Mac 插件采用 ad-hoc 签名。本版 PKG 未经 Apple Developer ID 签名或公证；系统提示来源未验证时，请核对下载来源，并参阅安装说明。
 
-Save your session and quit all audio hosts. On Windows 10/11 x64, run the EXE to install into `C:\Program Files\Common Files\VST3`. On macOS 11 or later, run the PKG to install into `/Library/Audio/Plug-Ins/VST3` and `/Library/Audio/Plug-Ins/Components`. Both installers replace known older copies. Rescan in your host after installation.
+Mac plug-ins carry ad-hoc signatures. The PKG is unsigned and has not been notarized by Apple. If macOS prompts you to verify the developer, check the download source and see the installation guide.
 
-Mac 插件使用 ad-hoc 签名，PKG 未经 Apple Developer ID 签名或公证。如系统提示来源未验证，请核对官方下载来源并参阅安装说明。
+GitHub 自动列出的 Source code ZIP/TAR 是这个公开文档仓库的快照。安装插件请选择上面的 EXE 或 PKG。
 
-The Mac plug-ins use ad-hoc signatures. The PKG is unsigned and has not been notarized by Apple. If macOS asks about the developer, verify the download source and follow the installation guide.
-
-- QQ Host 内的跨进程多轨兼容仍待处理。DAW 路由、轨道身份和延迟补偿行为可能影响跨轨连接与切换；插件应处于各参与轨处理链的最后。新装后先用工程副本检查。
-
-- QQ Host cross-process Multi Track remains pending. DAW routing, track identity, and delay compensation can affect cross-track connections and transitions. Put each participating endpoint last in its track's chain, and check a copy of the session after upgrading.
-
-中英文手册均为 v1.8.18，各 62 页；功能概览已更新为 13 项，保留原有配色、文字风格与图解。Graph、频谱、波形及放大操作有独立章节；播放中计算、SIP、发送与轨道名称来源也有图文说明。原有四种界面截图保留其实际版本标识。
-
-Both 62-page v1.8.18 manuals include the 13-item overview while retaining their established colors, writing style and illustrations. A dedicated chapter covers Graph, spectrum, waveform and the expand button, with illustrated guidance for live calculations, SIP, sending and track names. Existing UI-style screenshots keep their original version labels.
-
-中英文手册各 54 页，已同步高精度 TP、图表差值、SOURCE LEVELS 与全局/局部 ECO/FULL 的说明。
-
-Both 54-page manuals cover improved TP precision, named graph differences, SOURCE LEVELS and global/local ECO/FULL.
-
+GitHub also lists Source code ZIP and TAR snapshots of this public documentation repository. To install the plug-ins, choose the EXE or PKG above.
 
 ## 4. 逐版本更新记录 / Version history
+
+### 1.8.26 · B Return 的 PHASE、EQ Match 与 ECO / B Return calibration and ECO
+
+B Return 的 PHASE 同时选择 Wet 与 Main 两路 EQ Match 的相位模式，设置中共用一组 10 / 20 / 40 / 80 ms 档位。两路分别保留曲线和 MATCH 开关。先算 PHASE 或先算 EQ 均可。ECO 在面板可见时采集相位，在 Graph 展开时采集 EQ 和图表。停播或冻结后调节增益和干湿比例，会在同一段波形上显示结果。
+
+B Return uses one PHASE switch and one quality setting for phase correction and the Wet and Main EQ modes. Each EQ keeps its own curve and bypass. Both calibration orders give the same result. ECO observes phase while the panel is visible and analyzes EQ and graphs while Graph is open. Gain and blend edits preserve the displayed waveform interval after Stop or Freeze.
+
+### 1.8.25 · 保留音频的 EQ 频谱 / EQ spectra on held audio
+
+冻结或停播后，B 的 WET OUT、MAIN OUT 和 C/D 的 MIX 都能在同一段声音上开关 EQ MATCH，拖动 Amount、Smooth 和频率边界。橙色的输出曲线在操作中预览，随后按整段音频复算。两种语言的手册均新增直播测量专题（第 17–21 页）。
+After Freeze or Stop, toggle EQ MATCH or drag Amount, Smooth, and the frequency limits in B WET OUT, B MAIN OUT, or C/D MIX. The output spectrum previews the adjustment and is then recalculated from the full captured interval. Both manuals cover live metering on pages 17–21.
+
+### 1.8.24 · 频谱顶栏 / Spectrum toolbar
+
+B/C/D 在 QQ Host Live 的频谱标题旁提供 REFRESH 和 FREEZE。普通 DAW 在同一位置提供 FREEZE。波形栏保留 SCOPE 与拍数选择。
+B, C, and D place REFRESH and FREEZE beside the spectrum title in QQ Host Live. DAWs show FREEZE there. SCOPE and the beat selector remain above the waveform.
+
+### 1.8.23 · 冻结与停播时的 PHASE 和 EQ / PHASE and EQ on held audio
+
+CALC 学习模型，PHASE 开关应用模型并保留用户选定的整体极性。直播与冻结时可用当前有效的平均频谱做 EQ CAL。切换 LINEAR PHASE 可沿用已学曲线。
+CALC learns the model. PHASE applies it while preserving the overall Wet polarity the user chose. EQ CAL can use valid averages in live operation and after Freeze. Switching LINEAR PHASE reuses the learned curve.
+
+### 1.8.22 · 直播响度匹配 / Live loudness matching
+
+QQ Host Live 中 B/C/D 可用 REFRESH 或解冻开启新一轮测量。ECO 从打开面板起算，FULL 在后台继续。支持连续冻结、解冻和再次冻结。
+In QQ Host Live, B/C/D start a new measurement on REFRESH or release of FREEZE. ECO starts when the editor opens. FULL measures in the background. Freeze and release can be repeated in the same editor.
+
+### 1.8.21 · 整段重算 / Recalculate the held passage
+
+冻结或停播后调节增益、极性或混合时，图表和 MAIN OUT 电平使用保留的声音更新。TP、RMS 和综合响度覆盖本次播放起点至冻结或停止。
+After Freeze or Stop, gain, polarity, and blend adjustments update graphs and MAIN OUT readings using the captured audio. True peak, RMS, and integrated loudness span playback start through Freeze or Stop.
+
+### 1.8.20 · 图表冻结 / Graph Freeze
+
+B Return、C Mixboard 和 D Mixboard 可同时定格频谱与 Waveform 或 Wave Scope。冻结时可检查波形细节，声音继续输出。
+B Return, C Mixboard, and D Mixboard can freeze the spectrum and Waveform or Wave Scope together. Audio keeps playing while you inspect the held graphs.
 
 ### 1.8.19 — 频谱显示与波形导航 / Spectrum display and waveform navigation
 
