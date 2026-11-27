@@ -1,6 +1,6 @@
-# 插件护士 / QQ ChainScope 1.8.26 Stable
+# 插件护士 / QQ ChainScope 1.8.27 Stable
 
-**Qing Audio · 2026-11-27**
+**Qing Audio · 2026-11-28**
 
 ## 1. 产品介绍 / About the product
 
@@ -137,18 +137,22 @@ QQ ChainScope is proprietary Qing Audio software and is not open source. Public 
 
 ## 3. 最新版本下载与说明书 / Latest downloads and manuals
 
-[QQ ChainScope 1.8.26 Stable](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.26)
+[QQ ChainScope 1.8.27 Stable](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/tag/v1.8.27)
 
-- [Windows x64 安装包 · VST3 / Windows x64 installer](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-Windows-x64-Setup.exe)
-- [macOS 通用安装包 · AU + VST3 / Mac installer for Intel and Apple Silicon](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-macOS-Universal-Setup.pkg)
-- [安装说明（中文版）](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-Installation-Guide-Chinese.txt)
-- [Installation Guide (English)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-Installation-Guide-English.txt)
-- [用户手册（中文版，67 页）](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-User-Manual-Chinese.pdf)
-- [User Manual (English, 67 pages)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.26/QQ-ChainScope-1.8.26-User-Manual-English.pdf)
+- [Windows x64 安装包 · VST3 / Windows x64 installer](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.27/QQ-ChainScope-1.8.27-Windows-x64-Setup.exe)
+- [macOS 通用安装包 · AU + VST3 / Mac installer for Intel and Apple Silicon](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.27/QQ-ChainScope-1.8.27-macOS-Universal-Setup.pkg)
+- [安装说明（中文版）](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.27/QQ-ChainScope-1.8.27-Installation-Guide-Chinese.txt)
+- [Installation Guide (English)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.27/QQ-ChainScope-1.8.27-Installation-Guide-English.txt)
+- [用户手册（中文版，v1.8.26，67 页）](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.27/QQ-ChainScope-1.8.26-User-Manual-Chinese.pdf)
+- [User Manual (English, v1.8.26, 67 pages)](https://github.com/Qing-Audio/Plugin-Nurse-QQ-ChainScope-Release/releases/download/v1.8.27/QQ-ChainScope-1.8.26-User-Manual-English.pdf)
 
-升级或重装前请保存工程，退出音频宿主。Windows 10/11 x64 运行 EXE，安装到 `C:\Program Files\Common Files\VST3`。macOS 11 及以上运行 PKG，安装到 `/Library/Audio/Plug-Ins/VST3` 和 `/Library/Audio/Plug-Ins/Components`。安装器自动清理默认目录中本产品的旧版，再安装 A/B/C/D 四件套。工程、预设和个人设置保留。重新打开宿主扫描插件，确认四个组件均为 1.8.26。
+升级或重装前请保存工程，退出音频宿主。Windows 10/11 x64 运行 EXE，安装到 `C:\Program Files\Common Files\VST3`。macOS 11 及以上运行 PKG，安装到 `/Library/Audio/Plug-Ins/VST3` 和 `/Library/Audio/Plug-Ins/Components`。安装器自动清理默认目录中本产品的旧版，再安装 A/B/C/D 四件套。工程、预设和个人设置保留。重新打开宿主扫描插件，确认四个组件均为 1.8.27。
 
-Save your session and quit audio hosts before upgrading or reinstalling. Run the EXE on Windows 10/11 x64 or the universal PKG on macOS 11 or later. Setup replaces known older ChainScope plug-ins in the standard directories and installs all four components. Projects, presets and settings are retained. Reopen your host, rescan and check that A/B/C/D all report 1.8.26.
+Save your session and quit audio hosts before upgrading or reinstalling. Run the EXE on Windows 10/11 x64 or the universal PKG on macOS 11 or later. Setup replaces known older ChainScope plug-ins in the standard directories and installs all four components. Projects, presets and settings are retained. Reopen your host, rescan and check that A/B/C/D all report 1.8.27.
+
+如果旧版 C、D 在 Logic Pro 里显示「验证失败」，安装 1.8.27 后请在「插件管理器」中选中 Qing Audio 的 C Mixboard、D Mixboard，点击「还原并重新扫描选定部分」。
+
+If Logic Pro previously marked C or D as failed, install 1.8.27, select C Mixboard and D Mixboard under Qing Audio in Plug-in Manager, and click Reset & Rescan Selection.
 
 Mac 插件采用 ad-hoc 签名。本版 PKG 未经 Apple Developer ID 签名或公证；系统提示来源未验证时，请核对下载来源，并参阅安装说明。
 
@@ -159,6 +163,12 @@ GitHub 自动列出的 Source code ZIP/TAR 是这个公开文档仓库的快照�
 GitHub also lists Source code ZIP and TAR snapshots of this public documentation repository. To install the plug-ins, choose the EXE or PKG above.
 
 ## 4. 逐版本更新记录 / Version history
+
+### 1.8.27 · Logic Pro 中的 Mixboard AU 验证 / Mixboard AU validation in Logic Pro
+
+修复了 C Mixboard、D Mixboard 的音量自动化参数可能导致 Logic Pro 验证 AU 失败的问题。C Mixboard 独立使用时仍以原电平播放输入，宿主可以正确读回音量块保存的数值。已核对从 1.8.19 和 1.8.26 恢复的 C、D 音量设置。
+
+Fixed a level automation issue that could cause C Mixboard and D Mixboard to fail AU validation in Logic Pro. Standalone C still plays its input at unity gain, and the host can now read back the saved source levels. C and D level settings were verified against states saved in 1.8.19 and 1.8.26.
 
 ### 1.8.26 · B Return 的 PHASE、EQ Match 与 ECO / B Return calibration and ECO
 
